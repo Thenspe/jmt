@@ -1,0 +1,131 @@
+/*
+Created: May 1 2023 by Stephen VanDam
+Last modified: May 6 2023 by SV
+
+Color Palette:
+pinkish #E6BFB3 turquoise #06BAB5 Blue #2081A7 Lavender #E6E6FA
+Purple #5A3270 Onyx #454545 white #ffffff
+
+Initial coding for screen sizes < 800px wide
+*/
+* {
+    font-family: 'Futura Std', 'Didact Gothic', sans-serif;
+    color: #454545;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    display: flex; /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+    flex-direction: column;
+}
+header {
+    display:flex;
+    flex-flow: row nowrap;
+    flex: 0 0 auto;
+    flex-grow: 1;
+    /*justify-content: center;*/
+    margin: 1vw;
+    margin-bottom: 0;
+}
+nav {
+    width: 100%;
+    overflow: hidden; /* as per https://www.w3schools.com/howto/howto_js_topnav_responsive.asp*/
+}
+nav a {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'ITC Century Std (Bold)','Kaisei Opti', serif;
+    font-size: 20pt;
+    text-decoration: none;
+    border-radius: 15px;
+    background-color: #E6E6FA;
+}
+.topnav a:not(:last-child) {
+    display: none;
+}
+nav a.icon {
+    float: right;
+    display: block;
+}
+.topnav.responsive {
+    position: relative;
+}
+.topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+
+main {
+    background: #ffffff url("images/JMT_Logo_woText.png") center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: scroll;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    position: relative; /* need this to position inner content as per */
+    overflow-y: auto; /* https://codepen.io/anthonyLukes/pen/qBjLdv */
+}
+section {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 15px;
+    padding: 15px;
+    border-radius: 30px;
+}
+footer {
+    display: flex;
+    width: 100%;
+    background-color: #E6BFB3;
+    flex: 0 0 auto;
+    justify-content: center;
+}
+footer p {
+    font-size: 10pt;
+}
+h1 {
+    font-family: 'ITC Century Std (Bold)','Kaisei Opti', serif;
+}
+p {
+    font-size: 15pt;
+    margin: 5pt;
+}
+.headImage {
+    background-color: #E6E6FA;
+    border-radius: 15px;
+    padding: 2vw;
+}
+.logo {
+    height: 8vw;
+}
+/* Settings for greater than 800px wide */
+@media screen and (min-width: 800px) {
+    header {
+        display:flex;
+        flex-flow: row nowrap;
+        flex: 0 0 auto;
+        flex-grow: 1;
+        align-items: center;
+        margin: 1vw;
+        margin-bottom: 0;
+    }
+    nav {
+        overflow: none;
+    }
+    .topnav a:not(:last-child) {
+        display: initial;
+    }
+    nav a.icon {
+        display:none;
+    }
+}

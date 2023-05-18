@@ -1,0 +1,49 @@
+* {
+    font-family: 'Futura Std', 'Didact Gothic', sans-serif;
+    color: #454545;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background: #E6E6FA url("images/JMT_BC_corner.png") no-repeat right top;
+    background-size: 50%;
+}
+header {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+nav {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 30px;
+}
+nav > a {
+    margin: 15px;
+    font-family: 'ITC Century Std (Bold)','Kaisei Opti', serif;
+    font-size: 20pt;
+    text-decoration: none;
+}
+section {
+    background: rgba(255, 255, 255, 0.7);
+    margin: 15px;
+    padding: 15px;
+    border-radius: 30px;
+}
+a:hover {
+    color: #5A3270;
+    background-color: #06BAB5;
+}
+h1 {
+    font-family: 'ITC Century Std (Bold)','Kaisei Opti', serif;
+}
+p {
+    font-size: 15pt;
+    margin: 5pt;
+}
+#logo {
+    height: 100px;
+}
