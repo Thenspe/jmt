@@ -22,6 +22,7 @@ body {
     height: 100%;
     display: flex; /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
     flex-direction: column;
+    background-color: #FFFFFF;
 }
 header {
     display:flex;
@@ -31,6 +32,7 @@ header {
     /*justify-content: center;*/
     margin: 1vw;
     margin-bottom: 0;
+    /*background-color: #2081A7; */
 }
 nav {
     width: 100%;
@@ -43,7 +45,7 @@ nav a {
     font-size: 20pt;
     text-decoration: none;
     border-radius: 15px;
-    background-color: #E6E6FA;
+    /* background-color: #E6E6FA; */
 }
 .topnav a:not(:last-child) {
     display: none;
@@ -67,10 +69,6 @@ nav a.icon {
 }
 
 main {
-    background: #ffffff url("images/JMT_Logo_woText.png") center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-attachment: scroll;
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
@@ -101,7 +99,7 @@ p {
     margin: 5pt;
 }
 .headImage {
-    background-color: #E6E6FA;
+    /*background-color: #E6E6FA;*/
     border-radius: 15px;
     padding: 2vw;
 }
