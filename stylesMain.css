@@ -29,6 +29,7 @@ header {
     flex-flow: row nowrap;
     flex: 0 0 auto;
     flex-grow: 1;
+    color: #000000;
     /*justify-content: center;*/
     margin: 1vw;
     margin-bottom: 0;
@@ -44,6 +45,7 @@ nav a {
     font-family: 'ITC Century Std (Bold)','Kaisei Opti', serif;
     font-size: 20pt;
     text-decoration: none;
+    color: #000000;
     border-radius: 15px;
     /* background-color: #E6E6FA; */
 }
@@ -76,10 +78,8 @@ main {
     overflow-y: auto; /* https://codepen.io/anthonyLukes/pen/qBjLdv */
 }
 section {
-    background-color: rgba(255, 255, 255, 0.8);
-    margin: 15px;
+    margin: 15px 0 15px 0;
     padding: 15px;
-    border-radius: 30px;
 }
 footer {
     display: flex;
@@ -93,6 +93,7 @@ footer p {
 }
 h1 {
     font-family: 'ITC Century Std (Bold)','Kaisei Opti', serif;
+    color: #000000;
 }
 p {
     font-size: 15pt;
@@ -105,6 +106,9 @@ p {
 }
 .logo {
     height: 8vw;
+}
+.lav {
+    background-color: #E6E6FA;
 }
 /* Settings for greater than 800px wide */
 @media screen and (min-width: 800px) {
