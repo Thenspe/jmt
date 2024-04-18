@@ -100,8 +100,9 @@ p, li {
     margin: 5pt;
 }
 ul {
-    list-style: ' \266A';
-    /*list-style-position: inside;*/
+    list-style: '\266A  '; /*UTF-8 Eighth note symbol*/
+    list-style-position: inside; 
+    margin-left: 15pt;
 }
 ol{
     list-style-position: inside; /* https://www.w3schools.com/css/css_list.asp */
