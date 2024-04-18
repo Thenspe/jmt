@@ -95,9 +95,18 @@ h1 {
     font-family: 'ITC Century Std (Bold)','Kaisei Opti', serif;
     color: #000000;
 }
-p {
+p, li {
     font-size: 15pt;
     margin: 5pt;
+}
+ul {
+    list-style: ' \266A';
+    /*list-style-position: inside;*/
+}
+ol{
+    list-style-position: inside; /* https://www.w3schools.com/css/css_list.asp */
+    margin-left: 15pt;
+    
 }
 .headImage {
     /*background-color: #E6E6FA;*/
