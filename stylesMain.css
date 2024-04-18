@@ -107,6 +107,7 @@ h3 {
 p, li {
     font-size: 15pt;
     margin: 5pt;
+    text-align: justify;
 }
 ul {
     list-style: '\266B  '; /*UTF-8 Eighth note symbol \266A*/
@@ -116,6 +117,9 @@ ul {
 ol{
     margin-left: 15pt;
     
+}
+#MVV {
+    flex-direction: column;
 }
 .headImage {
     /*background-color: #E6E6FA;*/
@@ -131,7 +135,6 @@ ol{
 /* Settings for greater than 800px wide */
 @media screen and (min-width: 800px) {
     header {
-        display:flex;
         flex-flow: row nowrap;
         flex: 0 0 auto;
         flex-grow: 1;
@@ -147,5 +150,13 @@ ol{
     }
     nav a.icon {
         display:none;
+    }
+    #MVV {
+        flex-direction: row;
+    }
+    #MVV > div {
+        flex-grow: 1;
+        flex-basis: 0;
+        margin: 2vw;
     }
 }
