@@ -101,7 +101,7 @@ p, li {
 }
 ul {
     list-style: ' \266A';
-    list-style-position: inside;
+    /*list-style-position: inside;*/
 }
 ol{
     list-style-position: inside; /* https://www.w3schools.com/css/css_list.asp */
