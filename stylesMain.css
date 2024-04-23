@@ -18,12 +18,16 @@ Initial coding for screen sizes < 900px wide
 html {
     height: 100%;
 }
-.container {
+.vertbox { /* fixed flexbox layout for all screens */
     display: flex;/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+    flex-direction:column;
+}
+.horzbox { /* sets column flexbox layout, to be changed with screen size*/
+    display: flex;
+    flex-direction: column;
 }
 body {
     height: 100%;
-    flex-direction: column;
     background-color: #FFFFFF;
 }
 header {
@@ -72,7 +76,6 @@ nav a.icon {
 }
 
 main {
-    flex-direction: column;
     flex: 1 1 auto;
     position: relative; /* need this to position inner content as per */
     overflow-y: auto; /* https://codepen.io/anthonyLukes/pen/qBjLdv */
@@ -134,6 +137,10 @@ ol{
 }
 /* Settings for greater than 900px wide */
 @media screen and (min-width: 900px) {
+    .horzbox { /* sets 3-column layout on large screens*/
+        display: flex;
+        flex-direction: row; 
+    }
     header {
         flex-flow: row nowrap;
         flex: 0 0 auto;
