@@ -88,10 +88,10 @@ footer {
     width: 100%;
     background-color: #E6BFB3;
     flex: 0 0 auto;
-    justify-content: center;
 }
 footer p {
     font-size: 10pt;
+    text-align:center;
 }
 h1 {
     font-family: 'ITC Century Std (Bold)','Kaisei Opti', serif;
@@ -141,6 +141,12 @@ ol{
 .biopic {
     flex-grow: 1;
 }
+.bio > article {
+    order:2;
+}
+.bio > picture {
+    order:1;
+}
 /* Settings for greater than 900px wide */
 @media screen and (min-width: 900px) {
     .horzbox { /* sets 3-column layout on large screens*/
@@ -149,8 +155,7 @@ ol{
     }
     header {
         flex-flow: row nowrap;
-        flex: 0 0 auto;
-        flex-grow: 1;
+        flex: 1 0 auto;
         align-items: center;
         margin: 1vw;
         margin-bottom: 0;
@@ -175,5 +180,11 @@ ol{
     }
     .bio { /* bio entries to have the picture beside them, so row layout is required */
         flex-direction: row;
+    }
+    .bio > article {
+        order:1;
+    }
+    .bio > picture {
+        order:2;
     }
 }
