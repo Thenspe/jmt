@@ -121,9 +121,6 @@ ol{
     margin-left: 15pt;
     
 }
-picture {
-    margin: 15pt;
-}
 #MVV {
     flex-direction: column;
 }
@@ -141,8 +138,12 @@ picture {
 .bio > article {
     order:2;
 }
-.bio > picture {
+.bio > img {
     order:1;
+    margin:  0 1vw 0 0 ;
+}
+#Nic2 {
+    display:none;
 }
 /* Settings for greater than 900px wide */
 @media screen and (min-width: 900px) {
@@ -183,12 +184,19 @@ picture {
     .bio > article {
         order:1;
     }
-    .bio > picture {
+    .bio > img {
         order:2;
+        max-height: 500px;
     }
     .pagepic {
         margin: 0 1vw 0 1vw;
         width: 33vw;
         height: auto;
+    }
+    #Nic1 {
+        display:none;
+    }
+    #Nic2 {
+        display:initial;
     }
 }
