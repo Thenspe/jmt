@@ -121,6 +121,9 @@ ol{
     margin-left: 15pt;
     
 }
+picture {
+    margin: 15pt;
+}
 #MVV {
     flex-direction: column;
 }
@@ -135,12 +138,6 @@ ol{
 .lav {
     background-color: #E6E6FA;
 }
-.pagepic {
-    flex-grow: 1;
-}
-.biopic {
-    flex-grow: 1;
-}
 .bio > article {
     order:2;
 }
@@ -151,7 +148,8 @@ ol{
 @media screen and (min-width: 900px) {
     .horzbox { /* sets 3-column layout on large screens*/
         display: flex;
-        flex-direction: row; 
+        flex-direction: row;
+        align-items: center;
     }
     header {
         flex-flow: row nowrap;
@@ -180,11 +178,17 @@ ol{
     }
     .bio { /* bio entries to have the picture beside them, so row layout is required */
         flex-direction: row;
+        align-items: flex-start;
     }
     .bio > article {
         order:1;
     }
     .bio > picture {
         order:2;
+    }
+    .pagepic {
+        margin: 0 1vw 0 1vw;
+        width: 33vw;
+        height: auto;
     }
 }
