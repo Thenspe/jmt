@@ -80,7 +80,7 @@ main {
     overflow-y: auto; /* https://codepen.io/anthonyLukes/pen/qBjLdv */
 }
 section {
-    padding: 15px;
+    padding: 3vw;
     flex-direction: column;
 }
 footer {
