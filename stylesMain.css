@@ -74,7 +74,6 @@ nav a.icon {
     display: block;
     text-align: left;
 }
-
 main {
     flex: 1 1 auto;
     position: relative; /* need this to position inner content as per */
@@ -96,7 +95,8 @@ footer p {
 h1 {
     font-family: 'ITC Century Std (Bold)','Kaisei Opti', serif;
     color: #000000;
-    font-size: 25pt;
+    font-size: 30pt;
+    margin-bottom: 15pt;
 }
 h2 {
     font-family: 'ITC Century Std (Bold)','Kaisei Opti', serif;
@@ -140,7 +140,7 @@ ol{
 }
 .bio > img {
     order:1;
-    margin:  0 1vw 0 0 ;
+    margin:  0 3vw 0 0 ; /* add additional*/
 }
 #Nic2 {
     display:none;
@@ -151,6 +151,12 @@ ol{
         display: flex;
         flex-direction: row;
         align-items: center;
+    }
+    /* main {
+        padding: 25px;
+    } */
+    p, li {
+        text-align:left;
     }
     header {
         flex-flow: row nowrap;
@@ -168,7 +174,6 @@ ol{
     nav a.icon {
         display:none;
     }
-
     #MVV { /* Mission, Vision and Values to be set horizontally */
         flex-direction: row;
     }
@@ -182,10 +187,10 @@ ol{
         align-items: flex-start;
     }
     .bio > article {
-        order:1;
+        order:2;
     }
     .bio > img {
-        order:2;
+        order:1;
         max-height: 500px;
     }
     .pagepic {
