@@ -6,7 +6,7 @@ Color Palette:
 pinkish #E6BFB3 turquoise #06BAB5 Blue #2081A7 Lavender #E6E6FA
 Purple #5A3270 Onyx #454545 white #ffffff
 
-Initial coding for screen sizes < 800px wide
+Initial coding for screen sizes < 900px wide
 */
 * {
     font-family: 'Futura Std', 'Didact Gothic', sans-serif;
@@ -132,8 +132,8 @@ ol{
 .lav {
     background-color: #E6E6FA;
 }
-/* Settings for greater than 800px wide */
-@media screen and (min-width: 800px) {
+/* Settings for greater than 900px wide */
+@media screen and (min-width: 900px) {
     header {
         flex-flow: row nowrap;
         flex: 0 0 auto;
@@ -151,12 +151,16 @@ ol{
     nav a.icon {
         display:none;
     }
-    #MVV {
+
+    #MVV { /* Mission, Vision and Values to be set horizontally */
         flex-direction: row;
     }
     #MVV > div {
         flex-grow: 1;
         flex-basis: 0;
         margin: 2vw;
+    }
+    .bio { /* bio entries to have the picture beside them, so row layout is required */
+        flex-direction: row;
     }
 }

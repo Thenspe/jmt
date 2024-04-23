@@ -27,11 +27,11 @@
                 <a href="javascript:void(0);" class="icon" onclick="navFunction()">&#9776;</a>
             </nav>
         </header>
-        <main class="container">
+        <main class="container"> <!--container class sets flexbox layout-->
             <section id="About" class="lav container">
                 <h1>About Journey Music Therapy</h1>
                 <p>Nicole opened her private practice, Journey Music Therapy, in 2022 with the purpose of using music as a bridge to give people autonomy and support in their daily life.  “Life brings experiences and therefore all individuals are on their own unique journey(s). It is my joy to serve and use music to support the strengths and goals of those journeys”. </p>
-                <div id="MVV" class="container">
+                <div id="MVV" class="container"> <!--Mission, Vision and Values given an ID so they can be set horizontally in the CSS for large windows-->
                     <div>
                         <h2>Mission</h2>
                         <p>Our mission is to connect and support people’s journey through music in the community through a holistic therapeutic approach</p>
@@ -50,74 +50,86 @@
                 </div>
                 <h2>Bio</h2>
                 <h3>Nicole Agnihotri</h3>
-                <p>Founder, Certified Music Therapist (MTA) and Neurologic Music Therapist (NMT)</p>
-                <p>Nicole Agnihotri received her Bachelors in Music Therapy (BMT) and Theology (BTh). She became a Certified Music Therapist in 2018 and has completed training in Neurologic Music Therapy. Nicole works with individuals of all ages and abilities. Her focus has been on palliative and long-term care settings, adults and children cognitive and physical disabilities. She has a desire and passion in advocating music therapy. She is eager in, building authentic therapeutic relationships with people, hearing their story and learning new musical techniques to encourage positive quality living for individuals.
-                </p>
-                <h3>Philosophy</h3>
-                <p>Through the elements of music a catalyst is created to help with transcendence, self-esteem, joy, comfort, and positive change for oneself.</p>
-                <p>I believe that music is the foundation for unity and relationships. It is the tool to engage and find purpose in one's life.</p>
-                <img src="images/Nicole_Portrait.jpg" alt="Portrait shot of Nicole Agnihotri">
+                <div class="container bio"> <!-- bio entries after the title to have the image beside them -->
+                    <article> <!-- keeps the bio info together -->
+                        <p>Founder, Certified Music Therapist (MTA) and Neurologic Music Therapist (NMT)</p>
+                        <p>Nicole Agnihotri received her Bachelors in Music Therapy (BMT) and Theology (BTh). She became a Certified Music Therapist in 2018 and has completed training in Neurologic Music Therapy. Nicole works with individuals of all ages and abilities. Her focus has been on palliative and long-term care settings, adults and children cognitive and physical disabilities. She has a desire and passion in advocating music therapy. She is eager in, building authentic therapeutic relationships with people, hearing their story and learning new musical techniques to encourage positive quality living for individuals.
+                        </p>
+                        <h3>Philosophy</h3>
+                        <p>Through the elements of music a catalyst is created to help with transcendence, self-esteem, joy, comfort, and positive change for oneself.</p>
+                        <p>I believe that music is the foundation for unity and relationships. It is the tool to engage and find purpose in one's life.</p>
+                    </article>
+                    <img src="images/Nicole_Portrait.jpg" alt="Portrait shot of Nicole Agnihotri" style="width:200px">
+                </div>
             </section>
             <section id="WIMT" class="container">
-                <h1>What is Music Therapy?</h1>
-                <p>Music Therapy is a scientifically proven and allied health profession.  Musical elements and interventions such as rhythm and melody are skillfully and purposefully used by a Certified Music Therapist to address social, emotional, cognitive and, physical health. A holistic approach is used to build a therapeutic relationship enhancing the well-being and needs of the individual and to facilitate desired outcomes such as learning, self-expression, and personal growth.
-                </p>
-                <h2>Music Therapist</h2>
-                <p>In order to practice music therapy, one needs to become a Certified Music Therapist (Credentials: MTA).  This entails a four-year university bachelor degree, completing a 1,000- hour supervised clinical internship and passing a recognized certified exam which tests the knowledge of musical skills, therapy approaches, practices and techniques. Upon passing the exam the application and certification is signed through the Canadian Association of Music Therapists (CAMT).  Continuing education and following the Code of Ethics is mandatory to stay in good standing as an MTA.
-                </p>
-                <h2>Music Therapy Process</h2>
-                <p>Music Therapy sessions are designed on individualized long-term and short-term wellness goals. 
-                </p>
-                <ol>
-                    <li><b>Referral or intake form</b> - An intake helps the therapist learn about the client before the first therapy session takes place. It also helps the therapist to develop interventions that are best for the client.</li>
-                    <li><b>Assessment</b> - an initial assessment can take 2-4 sessions. In these sessions the music therapist will learn more about the client to establish a baseline.</li>
-                    <p><b>Treatment Plan</b> - If available, the music therapist will collaborate with support team (POA, guardians, parents, staff, other disciplines) to individualize the objectives and goals for the client. During treatment musical interventions such as singing, songwriting, improvisation, listening, lyrical analysis, breath work etc.., may be used to address goals. </p>
-                    <li><b>Review</b> - After a recommended period, the music therapist will review and reassess to determine if goals and objectives need to be modified or have been achieved. Once goals have been achieved a recommendation of being discharged will be discussed. </li>
-                </ol>
-                <p>Canadian Association of Music Therapists</p>
-                <p>September 2020
-                </p>
+                <article>
+                    <h1>What is Music Therapy?</h1>
+                    <p>Music Therapy is a scientifically proven and allied health profession.  Musical elements and interventions such as rhythm and melody are skillfully and purposefully used by a Certified Music Therapist to address social, emotional, cognitive and, physical health. A holistic approach is used to build a therapeutic relationship enhancing the well-being and needs of the individual and to facilitate desired outcomes such as learning, self-expression, and personal growth.
+                    </p>
+                    <h2>Music Therapist</h2>
+                    <p>In order to practice music therapy, one needs to become a Certified Music Therapist (Credentials: MTA).  This entails a four-year university bachelor degree, completing a 1,000- hour supervised clinical internship and passing a recognized certified exam which tests the knowledge of musical skills, therapy approaches, practices and techniques. Upon passing the exam the application and certification is signed through the Canadian Association of Music Therapists (CAMT).  Continuing education and following the Code of Ethics is mandatory to stay in good standing as an MTA.
+                    </p>
+                    <h2>Music Therapy Process</h2>
+                    <p>Music Therapy sessions are designed on individualized long-term and short-term wellness goals. 
+                    </p>
+                    <ol>
+                        <li><b>Referral or intake form</b> - An intake helps the therapist learn about the client before the first therapy session takes place. It also helps the therapist to develop interventions that are best for the client.</li>
+                        <li><b>Assessment</b> - an initial assessment can take 2-4 sessions. In these sessions the music therapist will learn more about the client to establish a baseline.</li>
+                        <p><b>Treatment Plan</b> - If available, the music therapist will collaborate with support team (POA, guardians, parents, staff, other disciplines) to individualize the objectives and goals for the client. During treatment musical interventions such as singing, songwriting, improvisation, listening, lyrical analysis, breath work etc.., may be used to address goals. </p>
+                        <li><b>Review</b> - After a recommended period, the music therapist will review and reassess to determine if goals and objectives need to be modified or have been achieved. Once goals have been achieved a recommendation of being discharged will be discussed. </li>
+                    </ol>
+                    <p>Canadian Association of Music Therapists</p>
+                    <p>September 2020
+                    </p>
+                </article>
+                <img src="images/Vertical Banner.jpg" alt="Music notes flowing down a river" style="width:200px">
             </section>
             <section id="Services" class="lav container">
-                <h1>Services</h1>
-                <h2>Types of Sessions</h2>
-                <p>We Offer sessions:</p>
-                <p><b>Individual-</b> Offering the safe environment of one-to-one </p>
-                <p><b>Group-</b> up to 8 persons</p>
-                <p><b>Virtual–</b> Connecting those who are far or prefer virtual interaction. Individual or group sessions can be accommodated through zoom (or google workspace)
-                </p>
-                <p><b>Contracts-</b> Schools, hospice, long-term care, senior residence, hospitals.
-                </p>
-                <h2>Who can benefit?</h2>
-                <p>Music Therapy can be provided in either a group or individual setting.  Musical training or experience is NOT required in order to engage in sessions. Music therapy is accessible to individual of all ages, abilities and diverse needs, including but not limited to:
-                </p>
-                <ul>
-                    <li>Children, Youth, and Adults on the Autism spectrum</li>
-                    <li>Intellectual developmental disabilities and physical disabilities</li>
-                    <li>Older adults living with dementia or Alzheimer’s</li>
-                    <li>Children with attention and learning challenges</li>
-                    <li>Veterans</li>
-                    <li>Anxiety</li>
-                    <li>Rehabilitation (Stroke, Parkinson’s, Aphasia etc..)</li>
-                    <li>Neonatal intensive Care</li>
-                    <li>Pain Management</li>
-                    <li>Depression</li>
-                    <li>Speech and language impairments</li>
-                </ul>
-                <h2>Benefits</h2>
-                <p>Increases Communication- Music encourages meaningful social interaction within a group or with the therapist.
-                </p>
-                <p>Pain management- music can ease pain. It affects our hormones (increase dopamine and oxytocin), which can create a distraction, resulting in relaxation and lowering anxiety levels.
-                </p>
-                <p>Music Therapy is a therapeutic profession which focuses on well-defined objective and attainable goals for each individual. Music Therapists use their knowledge of the power music to integrate towards the some of the following goals: communication, expression, self-regulation, elevation in mood, relaxation, focus, motor, and social interaction.
-                </p>                    
+                    <article>
+                    <h1>Services</h1>
+                    <h2>Types of Sessions</h2>
+                    <p>We Offer sessions:</p>
+                    <p><b>Individual-</b> Offering the safe environment of one-to-one </p>
+                    <p><b>Group-</b> up to 8 persons</p>
+                    <p><b>Virtual-</b> Connecting those who are far or prefer virtual interaction. Individual or group sessions can be accommodated through zoom (or google workspace)
+                    </p>
+                    <p><b>Contracts-</b> Schools, hospice, long-term care, senior residence, hospitals.
+                    </p>
+                    <h2>Who can benefit?</h2>
+                    <p>Music Therapy can be provided in either a group or individual setting.  Musical training or experience is NOT required in order to engage in sessions. Music therapy is accessible to individual of all ages, abilities and diverse needs, including but not limited to:
+                    </p>
+                    <ul>
+                        <li>Children, Youth, and Adults on the Autism spectrum</li>
+                        <li>Intellectual developmental disabilities and physical disabilities</li>
+                        <li>Older adults living with dementia or Alzheimer’s</li>
+                        <li>Children with attention and learning challenges</li>
+                        <li>Veterans</li>
+                        <li>Anxiety</li>
+                        <li>Rehabilitation (Stroke, Parkinson’s, Aphasia etc..)</li>
+                        <li>Neonatal intensive Care</li>
+                        <li>Pain Management</li>
+                        <li>Depression</li>
+                        <li>Speech and language impairments</li>
+                    </ul>
+                    <h2>Benefits</h2>
+                    <p>Increases Communication- Music encourages meaningful social interaction within a group or with the therapist.
+                    </p>
+                    <p>Pain management- music can ease pain. It affects our hormones (increase dopamine and oxytocin), which can create a distraction, resulting in relaxation and lowering anxiety levels.
+                    </p>
+                    <p>Music Therapy is a therapeutic profession which focuses on well-defined objective and attainable goals for each individual. Music Therapists use their knowledge of the power music to integrate towards the some of the following goals: communication, expression, self-regulation, elevation in mood, relaxation, focus, motor, and social interaction.
+                    </p>
+                </article>
+                <img src="images/VerticalBanner_v2.jpg" alt="Music notes flowing up a path" style="width:200px">
             </section>
             <section id="Contact" class="container">
-                <h1>Contact Us</h1>
-                <p>Call or email to make an appointment!</p>
-                <p>Time frame for hearing back: 1-2 business days.</p>
-                <p>Email: nicole@journeymusictherapy.ca</p>
-                <p>Phone: </p>
+                <article>
+                    <h1>Contact Us</h1>
+                    <p>Call or email to make an appointment!</p>
+                    <p>Time frame for hearing back: 1-2 business days.</p>
+                    <p>Email: nicole@journeymusictherapy.ca</p>
+                    <p>Phone: </p>
+                </article>
             </section>
         </main>
         <footer class="container">
