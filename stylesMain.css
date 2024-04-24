@@ -179,8 +179,8 @@ ol {
     nav a.icon {
         display:none;
     }
-    ol {
-        flex-shrink: 1;
+    #mprocess > li {
+        flex: 1 1 0;
     }
     #MVV > div {
         flex-grow: 1;
