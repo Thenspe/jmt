@@ -99,54 +99,94 @@
             <section class="white2lav">
                 <!--transition section from lavender to white-->
             </section>
-            <section id="Services" class="lav horzbox">
-                <article class="vertbox">
-                    <h1>Services</h1>
-                    <h2>Types of Sessions</h2>
-                    <p>We Offer sessions:</p>
-                    <p><b>Individual-</b> Offering the safe environment of one-to-one </p>
-                    <p><img src="images/JMT_Logo_woText.png" style="width:50px;height:50px;"><b>Group</b> up to 8 persons</p>
-                    <p><img src="images/JMT_Logo_woText.png" style="width:50px;height:50px;"><b>Virtual</b> Connecting those who are far or prefer virtual interaction. Individual or group sessions can be accommodated through zoom (or google workspace)
-                    </p>
-                    <p><img src="images/JMT_Logo_woText.png" style="width:50px;height:50px;"><b>Contracts</b> Schools, hospice, long-term care, senior residence, hospitals.
-                    </p>
-                    <br>
-                    <h2>Who can benefit?</h2>
-                    <p>Music Therapy can be provided in either a group or individual setting.  Musical training or experience is NOT required in order to engage in sessions. Music therapy is accessible to individual of all ages, abilities and diverse needs, including but not limited to:
-                    </p>
-                    <ul class="notes">
-                        <li>Children, Youth, and Adults on the Autism spectrum</li>
-                        <li>Intellectual developmental disabilities and physical disabilities</li>
-                        <li>Older adults living with dementia or Alzheimer’s</li>
-                        <li>Children with attention and learning challenges</li>
-                        <li>Veterans</li>
-                        <li>Anxiety</li>
-                        <li>Rehabilitation (Stroke, Parkinson’s, Aphasia etc..)</li>
-                        <li>Neonatal intensive Care</li>
-                        <li>Pain Management</li>
-                        <li>Depression</li>
-                        <li>Speech and language impairments</li> <!-- italicize list and space it out -->
-                    </ul>
-                    <br>
-                    <h2>Benefits</h2>
-                    <p>Increases Communication- Music encourages meaningful social interaction within a group or with the therapist.
-                    </p>
-                    <p>Pain management- music can ease pain. It affects our hormones (increase dopamine and oxytocin), which can create a distraction, resulting in relaxation and lowering anxiety levels.
-                    </p>
-                    <p>Music Therapy is a therapeutic profession which focuses on well-defined objective and attainable goals for each individual. Music Therapists use their knowledge of the power music to integrate towards the some of the following goals: communication, expression, self-regulation, elevation in mood, relaxation, focus, motor, and social interaction.
-                    </p>
-                    <h2>Music Therapist</h2>
-                    <p>In order to practice music therapy, one needs to become a Certified Music Therapist (Credentials: MTA).  This entails a four-year university bachelor degree, completing a 1,000- hour supervised clinical internship and passing a recognized certified exam which tests the knowledge of musical skills, therapy approaches, practices and techniques. Upon passing the exam the application and certification is signed through the Canadian Association of Music Therapists (CAMT).  Continuing education and following the Code of Ethics is mandatory to stay in good standing as an MTA.
-                    </p>
-                    <h2>Music Therapy Process</h2>
-                    <p>Music Therapy sessions are designed on individualized long-term and short-term wellness goals. 
-                    </p>
-                    <ul id="mprocess" class="horzbox"> <!--set in blocks across the screen, like missions values etc -->
-                        <li><p><b>Referral or intake form</b></p><p>An intake helps the therapist learn about the client before the first therapy session takes place. It also helps the therapist to develop interventions that are best for the client.</p></li>
-                        <li><p><b>Assessment</b></p><p>An initial assessment can take 2-4 sessions. In these sessions the music therapist will learn more about the client to establish a baseline.</p></li>
-                        <li><p><b>Treatment Plan</b></p><p>If available, the music therapist will collaborate with support team (POA, guardians, parents, staff, other disciplines) to individualize the objectives and goals for the client. During treatment musical interventions such as singing, songwriting, improvisation, listening, lyrical analysis, breath work etc.., may be used to address goals.</p></li>
-                        <li><p><b>Review</b></p><p>After a recommended period, the music therapist will review and reassess to determine if goals and objectives need to be modified or have been achieved. Once goals have been achieved a recommendation of being discharged will be discussed.</p></li>
-                    </ul>
+            <section id="Services" class="lav vertbox">
+                <h1>Services</h1>
+                <h2>Types of Sessions</h2>
+                <p>We Offer sessions:</p>
+                <article class="horzbox">
+                <!-- The following craziness is to allow for a flipped image to show text, as per https://www.w3schools.com/howto/howto_css_flip_image.asp -->
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                        <img src="images/JMT_Logo_woText.png" style="width:300px;">
+                        </div>
+                        <div class="flip-box-back">
+                        <p><b>Individual</b></p>
+                        <p>Offering the safe environment of one-to-one </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                        <img src="images/JMT_Logo_woText.png" style="width:300px;">
+                        </div>
+                        <div class="flip-box-back">
+                        <p><b>Group</b></p>
+                        <p>up to 8 persons</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                        <img src="images/JMT_Logo_woText.png" style="width:300px;">
+                        </div>
+                        <div class="flip-box-back">
+                        <p><b>Virtual</b></p>
+                        <p>Connecting those who are far or prefer virtual interaction. Individual or group sessions can be accommodated through zoom (or google workspace)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                        <img src="images/JMT_Logo_woText.png" style="width:300px;">
+                        </div>
+                        <div class="flip-box-back">
+                        <p><b>Contracts</b></p>
+                        <p>Schools, hospice, long-term care, senior residence, hospitals.</p>
+                        </div>
+                    </div>
+                </div>
+                </article>
+
+                <h2>Who can benefit?</h2>
+                <p>Music Therapy can be provided in either a group or individual setting.  Musical training or experience is NOT required in order to engage in sessions. Music therapy is accessible to individual of all ages, abilities and diverse needs, including but not limited to:
+                </p>
+                <ul class="notes">
+                    <li>Children, Youth, and Adults on the Autism spectrum</li>
+                    <li>Intellectual developmental disabilities and physical disabilities</li>
+                    <li>Older adults living with dementia or Alzheimer’s</li>
+                    <li>Children with attention and learning challenges</li>
+                    <li>Veterans</li>
+                    <li>Anxiety</li>
+                    <li>Rehabilitation (Stroke, Parkinson’s, Aphasia etc..)</li>
+                    <li>Neonatal intensive Care</li>
+                    <li>Pain Management</li>
+                    <li>Depression</li>
+                    <li>Speech and language impairments</li> <!-- italicize list and space it out -->
+                </ul>
+                <br>
+                <h2>Benefits</h2>
+                <p>Increases Communication- Music encourages meaningful social interaction within a group or with the therapist.
+                </p>
+                <p>Pain management- music can ease pain. It affects our hormones (increase dopamine and oxytocin), which can create a distraction, resulting in relaxation and lowering anxiety levels.
+                </p>
+                <p>Music Therapy is a therapeutic profession which focuses on well-defined objective and attainable goals for each individual. Music Therapists use their knowledge of the power music to integrate towards the some of the following goals: communication, expression, self-regulation, elevation in mood, relaxation, focus, motor, and social interaction.
+                </p>
+                <h2>Music Therapist</h2>
+                <p>In order to practice music therapy, one needs to become a Certified Music Therapist (Credentials: MTA).  This entails a four-year university bachelor degree, completing a 1,000- hour supervised clinical internship and passing a recognized certified exam which tests the knowledge of musical skills, therapy approaches, practices and techniques. Upon passing the exam the application and certification is signed through the Canadian Association of Music Therapists (CAMT).  Continuing education and following the Code of Ethics is mandatory to stay in good standing as an MTA.
+                </p>
+                <h2>Music Therapy Process</h2>
+                <p>Music Therapy sessions are designed on individualized long-term and short-term wellness goals. 
+                </p>
+                <ul id="mprocess" class="horzbox"> <!--set in blocks across the screen, like missions values etc -->
+                    <li><p><b>Referral or intake form</b></p><p>An intake helps the therapist learn about the client before the first therapy session takes place. It also helps the therapist to develop interventions that are best for the client.</p></li>
+                    <li><p><b>Assessment</b></p><p>An initial assessment can take 2-4 sessions. In these sessions the music therapist will learn more about the client to establish a baseline.</p></li>
+                    <li><p><b>Treatment Plan</b></p><p>If available, the music therapist will collaborate with support team (POA, guardians, parents, staff, other disciplines) to individualize the objectives and goals for the client. During treatment musical interventions such as singing, songwriting, improvisation, listening, lyrical analysis, breath work etc.., may be used to address goals.</p></li>
+                    <li><p><b>Review</b></p><p>After a recommended period, the music therapist will review and reassess to determine if goals and objectives need to be modified or have been achieved. Once goals have been achieved a recommendation of being discharged will be discussed.</p></li>
+                </ul>
                 </article>
             </section>
             <section class="lav2white">
