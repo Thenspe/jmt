@@ -147,6 +147,12 @@ ol {
     order:1;
     margin:  0 3vw 0 0 ; /* add additional*/
 }
+.centerme {
+    justify-content: space-around;
+}
+.centertext {
+    text-align: center;
+}
 #Nic2 {
     display:none;
 }
