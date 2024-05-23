@@ -157,7 +157,7 @@ ul.notes {
 .centertext {
     text-align: center;
 }
-#Nic2 {
+.NoMob {
     display:none;
 }
 /* Settings for greater than 900px wide */
@@ -214,10 +214,10 @@ ul.notes {
         width: 33vw;
         height: auto;
     }
-    #Nic1 {
+    .YesMob {
         display:none;
     }
-    #Nic2 {
+    .NoMob {
         display:initial;
     }
     /* The following insanity is to allow the flip boxes in Services to work.
