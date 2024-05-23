@@ -26,6 +26,10 @@ html {
     display: flex;
     flex-direction: column;
 }
+.permhorz { /* sets row flexbox layout, no change with screen size */
+    display: flex;
+    flex-direction: row;
+}
 body {
     height: 100%;
     background-color: #FFF;
@@ -157,7 +161,7 @@ ul.notes {
 .centertext {
     text-align: center;
 }
-.NoMob {
+.NoMob { /* hides desktop-only elements */
     display:none;
 }
 /* Settings for greater than 900px wide */
@@ -214,10 +218,10 @@ ul.notes {
         width: 33vw;
         height: auto;
     }
-    .YesMob {
+    .YesMob { /* Hides mobile-only elements */
         display:none;
     }
-    .NoMob {
+    .NoMob { /* shows desktop-only elements */
         display:initial;
     }
     /* The following insanity is to allow the flip boxes in Services to work.
