@@ -21,7 +21,6 @@ html {
 .vertbox { /* fixed flexbox layout for all screens */
     display: flex;/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
     flex-direction:column;
-    align-items: space-between;
 }
 .horzbox { /* sets column flexbox layout, to be changed with screen size*/
     display: flex;
@@ -115,14 +114,17 @@ p, li {
     text-align: justify;
 }
 ul {
-    list-style: '\266B  '; /*UTF-8 Eighth note symbol \266A*/
-    list-style-position: inside; /* https://www.w3schools.com/css/css_list.asp */
+    list-style: none;
     margin-left: 15pt;
 }
-ol {
-    list-style-position: inside;
-    /* margin-left: 15pt;     */
+ul.notes {
+    list-style: '\266B  '; /*UTF-8 Eighth note symbol \266A*/
+    list-style-position: inside; /* https://www.w3schools.com/css/css_list.asp */
 }
+/* ol {
+    list-style-position: inside;
+    /* margin-left: 15pt;     
+} */
 .headImage {
     /*background-color: #E6E6FA;*/
     border-radius: 15px;
@@ -163,7 +165,7 @@ ol {
     .horzbox { /* sets 3-column layout on large screens*/
         display: flex;
         flex-direction: row;
-        align-items: center;
+        /* align-items: center; */
     }
     /* main {
         padding: 25px;
@@ -189,21 +191,22 @@ ol {
     }
     #mprocess > li {
         flex: 1 1 0;
+        align-items: flex-start;
     }
-    #MVV > div {
+    /* #MVV > div {
         flex-grow: 1;
         flex-basis: 0;
         margin: 1vw;
-    }
+    } */
     .bio { /* bio entries to have the picture beside them, so row layout is required */
         flex-direction: row;
         align-items: flex-start;
     }
     .bio > article {
-        order:2;
+        order:1;
     }
     .bio > img {
-        order:1;
+        order:2;
         max-height: 500px;
     }
     .pagepic {
@@ -216,8 +219,5 @@ ol {
     }
     #Nic2 {
         display:initial;
-    }
-    #NicHeight {
-        align-items: space-between;
     }
 }
