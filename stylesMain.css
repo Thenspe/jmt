@@ -115,11 +115,11 @@ p, li {
 }
 ul {
     list-style: none;
-    margin-left: 15pt;
 }
 ul.notes {
     list-style: '\266B  '; /*UTF-8 Eighth note symbol \266A*/
     list-style-position: inside; /* https://www.w3schools.com/css/css_list.asp */
+    margin-left: 15pt;
 }
 /* ol {
     list-style-position: inside;
