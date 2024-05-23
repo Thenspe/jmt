@@ -21,6 +21,7 @@ html {
 .vertbox { /* fixed flexbox layout for all screens */
     display: flex;/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
     flex-direction:column;
+    align-items: space-between;
 }
 .horzbox { /* sets column flexbox layout, to be changed with screen size*/
     display: flex;
@@ -102,10 +103,11 @@ h2 {
     font-family: 'ITC Century Std (Bold)','Kaisei Opti', serif;
     color: #000000;
     font-size: 20pt;
+    margin: 5pt;
 }
 h3 {
-    text-decoration: underline;
     font-size: 15pt;
+    margin: 5pt;
 }
 p, li {
     font-size: 15pt;
@@ -191,7 +193,7 @@ ol {
     #MVV > div {
         flex-grow: 1;
         flex-basis: 0;
-        margin: 2vw;
+        margin: 1vw;
     }
     .bio { /* bio entries to have the picture beside them, so row layout is required */
         flex-direction: row;
@@ -214,5 +216,8 @@ ol {
     }
     #Nic2 {
         display:initial;
+    }
+    #NicHeight {
+        align-items: space-between;
     }
 }
