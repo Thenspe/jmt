@@ -36,8 +36,7 @@ body {
 }
 header {
     flex-flow: row nowrap;
-    flex: 0 0 auto;
-    flex-grow: 1;
+    flex: 1 0 auto;
     color: #000000;
     /*justify-content: center;*/
     margin: 1vw;
@@ -192,7 +191,13 @@ ul.notes {
         padding: 10px 15px;
         border-radius: 30px;
         border: 2px solid #5A3270;
+        /* border: 2px solid #E6E6FA; */
         /* background-color: #E6E6FA; */
+    }
+    nav a:hover {
+        transition: 0.5s;
+        background-color: #E6E6FA;
+        /* border-color: #E6E6FA; */
     }
     .topnav a:not(:last-child) {
         display: initial;
@@ -200,6 +205,13 @@ ul.notes {
     nav a.icon {
         display:none;
     }
+    #About {
+        display: flex;
+        flex-direction: row;
+    }
+    #About >div {
+        margin-right: 5vw;
+    }    
     #mprocess > li {
         flex: 1 1 0;
         align-items: flex-start;
