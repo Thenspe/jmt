@@ -226,10 +226,10 @@ ul.notes {
         align-items: flex-start;
     }
     .bio > article {
-        order:1;
+        order:2;
     }
     .bio > img {
-        order:2;
+        order:1;
         max-height: 500px;
     }
     .pagepic {
