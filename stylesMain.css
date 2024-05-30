@@ -55,8 +55,6 @@ nav a {
     font-size: 20pt;
     text-decoration: none;
     color: #000000;
-    border-radius: 15px;
-    /* background-color: #E6E6FA; */
 }
 .topnav a:not(:last-child) {
     display: none;
@@ -185,7 +183,16 @@ ul.notes {
         margin-bottom: 0;
     }
     nav {
+        display: flex;
         overflow: none;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+    nav a {
+        padding: 10px 15px;
+        border-radius: 30px;
+        border: 2px solid #5A3270;
+        /* background-color: #E6E6FA; */
     }
     .topnav a:not(:last-child) {
         display: initial;
