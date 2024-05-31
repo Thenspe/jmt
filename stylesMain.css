@@ -166,7 +166,7 @@ ul.notes {
     .horzbox { /* sets 3-column layout on large screens*/
         display: flex;
         flex-direction: row;
-        /* align-items: center; */
+        justify-content: space-between;
     }
     /* main {
         padding: 25px;
@@ -243,14 +243,21 @@ ul.notes {
     .NoMob { /* shows desktop-only elements */
         display:initial;
     }
+    .centreText {   /* https://www.w3schools.com/howto/howto_css_image_text.asp */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
     /* The following insanity is to allow the flip boxes in Services to work.
     Details at https://www.w3schools.com/howto/howto_css_flip_image.asp
     */
     .flip-box {
-        background-color: transparent;
-        width: 300px;
+        /* background-color: #06BAB5; */
+        width: 20vw;
         height: 200px;
         perspective: 1000px; /* Remove this if you don't want the 3D effect */
+        /* border-radius: 30px; */
       }
       
       /* This container is needed to position the front and back side */
@@ -275,18 +282,23 @@ ul.notes {
         height: 100%;
         -webkit-backface-visibility: hidden; /* Safari */
         backface-visibility: hidden;
+        border-radius: 60px;
+        background-color: #06BAB5;
       }
       
       /* Style the front side (fallback if image is missing) */
       .flip-box-front {
-        background-color: #E6E6FA;
+        /* background-color: #06BAB5; */
         color: black;
       }
       
       /* Style the back side */
       .flip-box-back {
-        background-color: #FFF;
+        /* background-color: #FFF; */
         color: white;
         transform: rotateY(180deg);
+      }
+      .flip-box-back >p {
+        text-align: center;
       }
 }
