@@ -5,12 +5,23 @@ Last modified: May 6 2023 by SV
 Color Palette:
 pinkish #E6BFB3 turquoise #06BAB5 Blue #2081A7 Lavender #E6E6FA
 Purple #5A3270 Onyx #454545 white #ffffff
-
-Initial coding for screen sizes < 900px wide
+*/
+/* Global Variables (colours) */
+:root {
+    --white: #fff;
+    --black: #000;
+    --onyx: #454545;
+    --lavender: #E6E6FA;
+    --turquoise: #06BAB5;
+    --purple: #5A3270;
+    --footerBackground: #E6BFB3;
+}
+/*
+Initial coding for screen sizes > 900px wide
 */
 * {
     font-family: 'Futura Std', 'Didact Gothic', sans-serif;
-    color: #454545;
+    color: var(--onyx);
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -25,19 +36,17 @@ html {
 .horzbox { /* sets column flexbox layout, to be changed with screen size*/
     display: flex;
     flex-direction: column;
+    flex: 1 0 auto;
 }
 .permhorz { /* sets row flexbox layout, no change with screen size */
     display: flex;
     flex-direction: row;
 }
-body {
-    height: 100%;
-    background-color: #FFF;
-}
+
 header {
     flex-flow: row nowrap;
     flex: 1 0 auto;
-    color: #000000;
+    color: var(--black);
     /*justify-content: center;*/
     margin: 1vw;
     margin-bottom: 0;
@@ -45,7 +54,7 @@ header {
 }
 nav {
     width: 100%;
-    overflow: hidden; /* as per https://www.w3schools.com/howto/howto_js_topnav_responsive.asp*/
+    overflow: hidden; /* as per https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
 }
 nav a {
     padding-left: 10px;
@@ -53,12 +62,12 @@ nav a {
     font-family: 'ITC Century Std (Bold)','Kaisei Opti', serif;
     font-size: 20pt;
     text-decoration: none;
-    color: #000000;
+    color: var(--black);
 }
 .topnav a:not(:last-child) {
     display: none;
 }
-nav a.icon {
+.topnav a.icon {
     float: right;
     display: block;
 }
@@ -86,7 +95,7 @@ section {
 }
 footer {
     width: 100%;
-    background-color: #E6BFB3;
+    background-color: var(--footerBackground);
     flex: 0 0 auto;
 }
 footer p {
@@ -95,13 +104,13 @@ footer p {
 }
 h1 {
     font-family: 'ITC Century Std (Bold)','Kaisei Opti', serif;
-    color: #000000;
+    color: var(--black);
     font-size: 30pt;
     margin-bottom: 15pt;
 }
 h2 {
     font-family: 'ITC Century Std (Bold)','Kaisei Opti', serif;
-    color: #000000;
+    color: var(--black);
     font-size: 20pt;
     margin: 5pt;
 }
@@ -135,15 +144,15 @@ ul.notes {
     height: 8vw;
 }
 .lav {
-    background-color: #E6E6FA;
+    background-color: var(--lavender);
 }
 .lav2white {
     min-height: 75px;
-    background-image: linear-gradient(#E6E6FA, #fff)
+    background-image: linear-gradient(var(--lavender), var(--white))
 }
 .white2lav {
     min-height: 75px;
-    background-image: linear-gradient(#fff, #E6E6FA)
+    background-image: linear-gradient(var(--white), var(--lavender))
 }
 .bio > article {
     order:2;
@@ -157,6 +166,12 @@ ul.notes {
 }
 .centertext {
     text-align: center;
+}
+.blackFont p {
+    color: var(--black);
+}
+p.whiteFont {
+    color: var(--white);
 }
 .NoMob { /* hides desktop-only elements */
     display:none;
@@ -190,14 +205,14 @@ ul.notes {
     nav a {
         padding: 10px 15px;
         border-radius: 30px;
-        border: 2px solid #5A3270;
+        border: 2px solid var(--purple);
         /* border: 2px solid #E6E6FA; */
         /* background-color: #E6E6FA; */
     }
     nav a:hover {
         transition: 0.5s;
-        background-color: #E6E6FA;
-        /* border-color: #E6E6FA; */
+        background-color: var(--lavender);
+        /* border-color: var(--lavender); */
     }
     .topnav a:not(:last-child) {
         display: initial;
@@ -283,19 +298,17 @@ ul.notes {
         -webkit-backface-visibility: hidden; /* Safari */
         backface-visibility: hidden;
         border-radius: 60px;
-        background-color: #06BAB5;
+        background-color: var(--turquoise);
       }
       
       /* Style the front side (fallback if image is missing) */
       .flip-box-front {
-        /* background-color: #06BAB5; */
-        color: black;
+        color: var(--black);
       }
       
       /* Style the back side */
       .flip-box-back {
-        /* background-color: #FFF; */
-        color: white;
+        color: var(--white);
         transform: rotateY(180deg);
       }
       .flip-box-back >p {

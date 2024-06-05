@@ -20,7 +20,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <title>Journey Music Therapy</title>
-        <link rel="stylesheet" href="stylesMain.css">
+        <link rel="stylesheet" href="stylesMain2.css">
         
         <!-- connections for fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +29,7 @@
     </head>
     <body class="vertbox">
         <header class="horzbox" id="myhead">
-            <figure class="headImage">
+            <figure>
                 <img src="images/JMTWordMark.png" alt="Journey Music Therapy" class="logo">
             </figure>
             <nav class="topnav" id="myTopnav">
@@ -44,15 +44,14 @@
             <!-- <section class="lav"> -->
                 <!--transition section from white to lavender-->
             <!-- </section> -->
-            <section id="About">
-                <!-- <img src="images/Vertical Banner.jpg" alt="Music notes flowing down a river" style="max-width:502px; max-height:1003px;" class="pagepic"> -->
+            <section id="About" class="horzbox">
                 <!--body to left 2/3, column MVV to right, centered-->
                 <div class="vertbox">
                     <h1>About Journey Music Therapy</h1>
                     <p>Nicole opened her private practice, Journey Music Therapy, in 2022 with the purpose of using music as a bridge to give people autonomy and support in their daily life.  “Life brings experiences and therefore all individuals are on their own unique journey(s). It is my joy to serve and use music to support the strengths and goals of those journeys”. </p>
                 </div>
                     <!-- <img src="images/JMT_Logo_woText.png" alt="Journey Music Therapy" style="width:40vw"> -->
-                <article id="MVV" class="vertbox"> <!--Mission, Vision and Values given an ID so they can be set horizontally in the CSS for large windows-->
+                <article class="vertbox"> <!--Mission, Vision and Values given an ID so they can be set horizontally in the CSS for large windows-->
                     <div>
                         <h2>Mission</h2>
                         <p>Our mission is to connect and support people’s journey through music in the community through a holistic therapeutic approach</p>
@@ -96,7 +95,7 @@
                         <p>Music Therapy is a scientifically proven and allied health profession.  Musical elements and interventions such as rhythm and melody are skillfully and purposefully used by a Certified Music Therapist to address social, emotional, cognitive and, physical health. A holistic approach is used to build a therapeutic relationship enhancing the well-being and needs of the individual and to facilitate desired outcomes such as learning, self-expression, and personal growth.
                         </p>
                     </article>
-                    <img src="images/VerticalBanner_v2.jpg" alt="Music notes flowing up a path" style="max-width:500px; max-height:1040px;" class="pagepic">
+                    <img src="images/Vertical Banner.jpg" alt="Music notes flowing down a river" style="max-width:502px; max-height:1003px;" class="pagepic">
                     <article class="vertbox">
                         <h2>What Makes a Music Therapist</h2>
                         <p>In order to practice music therapy, one needs to become a Certified Music Therapist (Credentials: MTA).  This entails a four-year university bachelor degree, completing a 1,000- hour supervised clinical internship and passing a recognized certified exam which tests the knowledge of musical skills, therapy approaches, practices and techniques. Upon passing the exam the application and certification is signed through the Canadian Association of Music Therapists (CAMT).  Continuing education and following the Code of Ethics is mandatory to stay in good standing as an MTA.</p>
@@ -105,44 +104,48 @@
                 <h2>Music Therapy Process</h2>
                 <p>Music Therapy sessions are designed on individualized long-term and short-term wellness goals. </p>
                 <!-- do the flippy here, use 06BAB5 instead of the image - try light and dark text -->
-                <article class="horzbox"><!-- The following craziness is to allow for a flipped image to show text, as per https://www.w3schools.com/howto/howto_css_flip_image.asp -->
-                    <div class="flip-box"> <!--First Box "Referral"-->
-                        <div class="flip-box-inner">
-                            <div class="flip-box-front">
-                                <p class="centreText"><b>Referral or intake form</b></p>
+                <article class="vertbox"><!-- The following craziness is to allow for a flipped image to show text, as per https://www.w3schools.com/howto/howto_css_flip_image.asp -->
+                    <div class="horzbox"> <!-- row 1-->
+                        <div class="flip-box"> <!--First Box "Referral"-->
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <h2>Referral or intake form</h2>
+                                </div>
+                                <div class="flip-box-back">
+                                <p>An intake helps the therapist learn about the client before the first therapy session takes place. It also helps the therapist to develop interventions that are best for the client.</p>
+                                </div>
                             </div>
-                            <div class="flip-box-back">
-                            <p>An intake helps the therapist learn about the client before the first therapy session takes place. It also helps the therapist to develop interventions that are best for the client.</p>
+                        </div>
+                        <div class="flip-box"> <!-- Second Box "Assessment"-->
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <h2 class="blackFont">Assessment</h2>
+                                </div>
+                                <div class="flip-box-back">
+                                    <p>An initial assessment can take 2-4 sessions. In these sessions the music therapist will learn more about the client to establish a baseline.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="flip-box"> <!-- Second Box "Assessment"-->
-                        <div class="flip-box-inner">
-                            <div class="flip-box-front">
-                                <p class="centreText"><b>Assessment</b></p>
-                            </div>
-                            <div class="flip-box-back">
-                                <p>An initial assessment can take 2-4 sessions. In these sessions the music therapist will learn more about the client to establish a baseline.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-box"> <!--Third Box "Treatment"-->
-                        <div class="flip-box-inner">
-                            <div class="flip-box-front">
-                                <p class="centreText"><b>Treatment Plan</b></p>
-                            </div>
-                            <div class="flip-box-back">
-                            <p>If available, the music therapist will collaborate with support team (POA, guardians, parents, staff, other disciplines) to individualize the objectives and goals for the client. During treatment musical interventions such as singing, songwriting, improvisation, listening, lyrical analysis, breath work etc.., may be used to address goals.</p>
+                    <div class="horzbox"> <!-- row 2 -->
+                        <div class="flip-box"> <!--Third Box "Treatment"-->
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front whiteFont">
+                                    <h2 class="whiteFont">Treatment Plan</h2>
+                                </div>
+                                <div class="flip-box-back">
+                                <p>If available, the music therapist will collaborate with support team (POA, guardians, parents, staff, other disciplines) to individualize the objectives and goals for the client. During treatment musical interventions such as singing, songwriting, improvisation, listening, lyrical analysis, breath work etc.., may be used to address goals.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="flip-box"> <!-- Fourth Box "Review"-->
-                        <div class="flip-box-inner">
-                            <div class="flip-box-front">
-                                <p class="centreText"><b>Review</b></p>
-                            </div>
-                            <div class="flip-box-back">                            
-                                <p>After a recommended period, the music therapist will review and reassess to determine if goals and objectives need to be modified or have been achieved. Once goals have been achieved a recommendation of being discharged will be discussed.</p>
+                        <div class="flip-box"> <!-- Fourth Box "Review"-->
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <h2 class="lightFont">Review</h2>
+                                </div>
+                                <div class="flip-box-back">                            
+                                    <p>After a recommended period, the music therapist will review and reassess to determine if goals and objectives need to be modified or have been achieved. Once goals have been achieved a recommendation of being discharged will be discussed.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -155,82 +158,56 @@
                 <h1>Services</h1>
                 <h2>Types of Sessions</h2>
                 <p>We Offer sessions:</p>
-                <article class="vertbox"><!-- The following craziness is to allow for a flipped image to show text, as per https://www.w3schools.com/howto/howto_css_flip_image.asp -->
-                    <div class="horzbox"> <!--First Row-->
-                        <div class="flip-box"> <!--First Box "Individual"-->
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img src="images/JMT_Logo_woText.png" style="width:300px;">
-                                </div>
-                                <div class="flip-box-back">
-                                <p><b>Individual</b></p>
-                                <p>Offering the safe environment of one-to-one </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flip-box"> <!-- Second Box "Group"-->
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img src="images/JMT_Logo_woText.png" style="width:300px;">
-                                </div>
-                                <div class="flip-box-back">
-                                <p><b>Group</b></p>
-                                <p>up to 8 persons</p>
-                                </div>
-                            </div>
-                        </div>
+                <article id="space" class="horzbox">
+                    <div class="vertbox">
+                        <img src="images/JMT_Logo_woText.png" style="width:300px;">
+                        <p><b>Individual</b></p>
+                        <p>Offering the safe environment of one-to-one </p>
                     </div>
-                    <div class="horzbox">
-                        <div class="flip-box"> <!--Third Box "Virtual"-->
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img src="images/JMT_Logo_woText.png" style="width:300px;">
-                                </div>
-                                <div class="flip-box-back">
-                                <p><b>Virtual</b></p>
-                                <p>Connecting those who are far or prefer virtual interaction. Individual or group sessions can be accommodated through zoom (or google workspace)</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flip-box"> <!-- Fourth Box "Contracts"-->
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img src="images/JMT_Logo_woText.png" style="width:300px;">
-                                </div>
-                                <div class="flip-box-back">
-                                <p><b>Contracts</b></p>
-                                <p>Schools, hospice, long-term care, senior residence, hospitals.</p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="vertbox">
+                        <img src="images/JMT_Logo_woText.png" style="width:300px;">
+                        <p><b>Group</b></p>
+                        <p>up to 8 persons</p>
+                    </div>
+                    <div class="vertbox">
+                        <img src="images/JMT_Logo_woText.png" style="width:300px;">
+                        <p><b>Virtual</b></p>
+                        <p>Connecting those who are far or prefer virtual interaction. Individual or group sessions can be accommodated through zoom (or google workspace)</p>
+                    </div>
+                    <div class="vertbox">
+                        <img src="images/JMT_Logo_woText.png" style="width:300px;">
+                        <p><b>Contracts</b></p>
+                        <p>Schools, hospice, long-term care, senior residence, hospitals.</p>
                     </div>
                 </article>
                 <!-- add book consultation button -->
                 <!-- split the following into 3 columns, image/who can benefit/benefits -->
-                <h2>Who can benefit?</h2>
-                <p>Music Therapy can be provided in either a group or individual setting.  Musical training or experience is NOT required in order to engage in sessions. Music therapy is accessible to individual of all ages, abilities and diverse needs, including but not limited to:
-                </p>
-                <ul class="notes">
-                    <li>Children, Youth, and Adults on the Autism spectrum</li>
-                    <li>Intellectual developmental disabilities and physical disabilities</li>
-                    <li>Older adults living with dementia or Alzheimer’s</li>
-                    <li>Children with attention and learning challenges</li>
-                    <li>Veterans</li>
-                    <li>Anxiety</li>
-                    <li>Rehabilitation (Stroke, Parkinson’s, Aphasia etc..)</li>
-                    <li>Neonatal intensive Care</li>
-                    <li>Pain Management</li>
-                    <li>Depression</li>
-                    <li>Speech and language impairments</li> <!-- italicize list and space it out -->
-                </ul>
-                <br>
-                <h2>Benefits</h2>
-                <p>Increases Communication- Music encourages meaningful social interaction within a group or with the therapist.
-                </p>
-                <p>Pain management- music can ease pain. It affects our hormones (increase dopamine and oxytocin), which can create a distraction, resulting in relaxation and lowering anxiety levels.
-                </p>
-                <p>Music Therapy is a therapeutic profession which focuses on well-defined objective and attainable goals for each individual. Music Therapists use their knowledge of the power music to integrate towards the some of the following goals: communication, expression, self-regulation, elevation in mood, relaxation, focus, motor, and social interaction.
-                </p>
+                <article class="horzbox">
+                    <img src="images/VerticalBanner_v2.jpg" alt="Music notes flowing up a path" style="max-width:500px; max-height:1040px;" class="pagepic">
+                    <div class="vertbox">
+                        <h2>Who can benefit?</h2>
+                        <p>Music Therapy can be provided in either a group or individual setting.  Musical training or experience is NOT required in order to engage in sessions. Music therapy is accessible to individual of all ages, abilities and diverse needs, including but not limited to:</p>
+                        <ul class="notes">
+                            <li>Children, Youth, and Adults on the Autism spectrum</li>
+                            <li>Intellectual developmental disabilities and physical disabilities</li>
+                            <li>Older adults living with dementia or Alzheimer’s</li>
+                            <li>Children with attention and learning challenges</li>
+                            <li>Veterans</li>
+                            <li>Anxiety</li>
+                            <li>Rehabilitation (Stroke, Parkinson’s, Aphasia etc..)</li>
+                            <li>Neonatal intensive Care</li>
+                            <li>Pain Management</li>
+                            <li>Depression</li>
+                            <li>Speech and language impairments</li> <!-- italicize list and space it out -->
+                        </ul>
+                    </div>
+                    <div class="vertbox">
+                        <h2>Benefits</h2>
+                        <ul class="notes">
+                        <li>Increases Communication- Music encourages meaningful social interaction within a group or with the therapist.</li>
+                        <li>Pain management- music can ease pain. It affects our hormones (increase dopamine and oxytocin), which can create a distraction, resulting in relaxation and lowering anxiety levels.</li>
+                        <li>Music Therapy is a therapeutic profession which focuses on well-defined objective and attainable goals for each individual. Music Therapists use their knowledge of the power music to integrate towards the some of the following goals: communication, expression, self-regulation, elevation in mood, relaxation, focus, motor, and social interaction.</li>
+                    </div>
                 </article>
             </section>
             <section class="lav2white">
