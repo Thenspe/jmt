@@ -9,7 +9,8 @@ Last Modified June 6 2024 by SV
     --lavender: #E6E6FA;
     --turquoise: #06BAB5;
     --purple: #5A3270;
-    --mainBackground: var(--lavender);
+    --mainPrimary: var(--lavender);
+    --mainSecondary: var(--white);
     --footerBackground: #E6BFB3;
 }
 * { /* Sets fonts and default margins */
@@ -45,8 +46,9 @@ body {
 header {
     flex-flow: row nowrap;
     align-items: center;
-    margin: 1vw;
-    margin-bottom: 0;
+    padding: 1vw;
+    padding-bottom: 0;
+    background-color: var(--white);
 }
 nav {
     display: flex;
@@ -128,15 +130,15 @@ span {
 
 /* Background Colours and Gradient Settings */
 .shade {
-    background-color: var(--mainBackground);
+    background-color: var(--mainPrimary);
 }
 .shade2white {
     min-height: 75px;
-    background-image: linear-gradient(var(--mainBackground), var(--white))
+    background-image: linear-gradient(var(--mainPrimary), var(--mainSecondary))
 }
 .white2shade {
     min-height: 75px;
-    background-image: linear-gradient(var(--white), var(--mainBackground))
+    background-image: linear-gradient(var(--mainSecondary), var(--mainPrimary))
 }
 
 /* Styles to hide mobile-device elements */
