@@ -170,7 +170,7 @@ section { /* Some padding around all main items */
 }
 .pagepic { /* Settings for the vertical banner images */
     margin: 0 1vw 0 1vw;
-    width: 33vw;
+    min-width: 33vw;
     height: auto;
 }
 .centerbutton {
