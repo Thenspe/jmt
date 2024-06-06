@@ -162,14 +162,14 @@ section { /* Some padding around all main items */
     width: 33vw;
     height: auto;
 }
-#space { /* Sets spacing for the Types of Sessions elements */
+#sessions { /* Sets spacing for the Types of Sessions elements */
     justify-content: space-evenly;
     margin-bottom: 4vw;
 }
-#space > * {
+#sessions > * {
     flex: 1 1 0;
 }
-#space > div {
+#sessions > div {
     margin: 0 1vw;
     align-items: center;
 }
