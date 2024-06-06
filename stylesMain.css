@@ -9,6 +9,7 @@ Last Modified June 6 2024 by SV
     --lavender: #E6E6FA;
     --turquoise: #06BAB5;
     --purple: #5A3270;
+    --mainBackground: var(--lavender);
     --footerBackground: #E6BFB3;
 }
 * { /* Sets fonts and default margins */
@@ -111,23 +112,31 @@ p, li {
     margin: 5pt;
     text-align: left;
 }
-ul.notes {
+.notes {
     list-style: '\266B  '; /*UTF-8 Eighth note symbol \266A*/
     list-style-position: inside; /* https://www.w3schools.com/css/css_list.asp */
     margin-left: 15pt;
 }
+.eightnotes > li {
+    list-style: '\266A  ';
+    list-style-position: inside; /* https://www.w3schools.com/css/css_list.asp */
+    margin-left: 0;
+}
+span {
+    font-weight: bold;
+}
 
 /* Background Colours and Gradient Settings */
-.lav {
-    background-color: var(--lavender);
+.shade {
+    background-color: var(--mainBackground);
 }
-.lav2white {
+.shade2white {
     min-height: 75px;
-    background-image: linear-gradient(var(--lavender), var(--white))
+    background-image: linear-gradient(var(--mainBackground), var(--white))
 }
-.white2lav {
+.white2shade {
     min-height: 75px;
-    background-image: linear-gradient(var(--white), var(--lavender))
+    background-image: linear-gradient(var(--white), var(--mainBackground))
 }
 
 /* Styles to hide mobile-device elements */
@@ -162,9 +171,12 @@ section { /* Some padding around all main items */
     width: 33vw;
     height: auto;
 }
+.centerbutton {
+    align-items: center;
+}
 #sessions { /* Sets spacing for the Types of Sessions elements */
     justify-content: space-evenly;
-    margin-bottom: 4vw;
+    /* margin-bottom: 4vw; */
 }
 #sessions > * {
     flex: 1 1 0;
@@ -172,6 +184,18 @@ section { /* Some padding around all main items */
 #sessions > div {
     margin: 0 1vw;
     align-items: center;
+}
+.bookNow { /* Styles for the booking buttons */
+    font-size: 20pt;
+    font-weight: bold;
+    width: 50vw;
+    height: 60px;
+    margin: 4vw;
+    background-color: var(--footerBackground);
+    border-radius: 10px;
+}
+.benefits { /* Adds some space between the benefits sections */
+    margin: 0 2vw;
 }
 .centerme > * { /* Centers the contact info items, and spaces them nicely */
     justify-content: space-around;

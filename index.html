@@ -27,8 +27,8 @@
             </nav>
         </header>
         <main class="vertbox"> <!--container class sets flexbox layout-->
-            <!-- <section class="lav"> -->
-                <!--transition section from white to lavender-->
+            <!-- <section class="shade"> -->
+                <!--transition section from white to colour-->
             <!-- </section> -->
             <section id="About" class="horzbox">
                 <!--body to left 2/3, column MVV to right, centered-->
@@ -53,10 +53,10 @@
                     </div>
                 </article>                
             </section>
-            <section class="white2lav">
+            <section class="white2shade">
                 <!--transition section from lavender to white-->
             </section>
-            <section id="Team" class="lav vertbox">
+            <section id="Team" class="shade vertbox">
                 <h2 class="YesMob">Nicole Agnihotri</h2>
                 <div class="horzbox bio"> <!-- bio entries after the title to have the image beside them -->
                     <article id="NicHeight" class="vertbox"> <!-- keeps the bio info together -->
@@ -71,8 +71,8 @@
                     <img src="images/Nicole_Portrait.jpg" alt="Portrait shot of Nicole Agnihotri" style="max-width:500px; height:auto;" class="biopic">
                 </div>
             </section>
-            <section class="lav2white">
-                <!--transition section from white to lavender-->
+            <section class="shade2white">
+                <!--transition section from white to colour-->
             </section>
             <section id="WIMT" class="vertbox">
                 <div class="horzbox">
@@ -89,8 +89,8 @@
                 </div>
                 <h2>Music Therapy Process</h2>
                 <p>Music Therapy sessions are designed on individualized long-term and short-term wellness goals. </p>
-                <!-- do the flippy here, use 06BAB5 instead of the image - try light and dark text -->
-                <article class="vertbox"><!-- The following craziness is to allow for a flipped image to show text, as per https://www.w3schools.com/howto/howto_css_flip_image.asp -->
+                <article class="vertbox">
+                    <!-- The following craziness is to allow for a flipped image to show text, as per https://www.w3schools.com/howto/howto_css_flip_image.asp -->
                     <div class="horzbox"> <!-- row 1-->
                         <div class="flip-box"> <!--First Box "Referral"-->
                             <div class="flip-box-inner">
@@ -137,67 +137,70 @@
                     </div>
                 </article>
             </section>
-            <section class="white2lav">
+            <section class="white2shade">
                 <!--transition section from lavender to white-->
             </section>
-            <section id="Services" class="lav vertbox">
+            <section id="Services" class="shade vertbox">
                 <h1>Services</h1>
                 <h2>Types of Sessions:</h2>
                 <!-- <p>We Offer sessions:</p> -->
-                <article id="sessions" class="horzbox">
-                    <div class="vertbox">
-                        <object data="images/single_Icon.svg" type="image/svg+xml" width="150" height="150"></object>
-                        <h3>Individual</h3>
-                        <p>Offering the safe environment of one-to-one </p>
-                    </div>
-                    <div class="vertbox">
-                        <object data="images/group_Icon.svg" type="image/svg+xml" width="150" height="150"></object>
-                        <h3>Group</h3>
-                        <p>up to 8 persons</p>
-                    </div>
-                    <div class="vertbox">
-                        <object data="images/virtual_Icon.svg" type="image/svg+xml" width="150" height="150"></object>
-                        <h3>Virtual</h3>
-                        <p>Connecting those who are far or prefer virtual interaction. Individual or group sessions can be accommodated through zoom (or google workspace)</p>
-                    </div>
-                    <div class="vertbox">
-                        <object data="images/contracts_Icon.svg" type="image/svg+xml" width="150" height="150"></object>
-                        <h3>Contracts</h3>
-                        <p>Schools, hospice, long-term care, senior residence, hospitals.</p>
-                    </div>
-                </article>
-                <!-- add book consultation button -->
-                <!-- split the following into 3 columns, image/who can benefit/benefits -->
-                <article class="horzbox">
-                    <img src="images/VerticalBanner_v2.jpg" alt="Music notes flowing up a path" style="max-width:500px; max-height:1040px;" class="pagepic">
-                    <div class="vertbox">
-                        <h2>Who can benefit?</h2>
-                        <p>Music Therapy can be provided in either a group or individual setting.  Musical training or experience is NOT required in order to engage in sessions. Music therapy is accessible to individual of all ages, abilities and diverse needs, including but not limited to:</p>
-                        <ul class="notes">
-                            <li>Children, Youth, and Adults on the Autism spectrum</li>
-                            <li>Intellectual developmental disabilities and physical disabilities</li>
-                            <li>Older adults living with dementia or Alzheimer’s</li>
-                            <li>Children with attention and learning challenges</li>
-                            <li>Veterans</li>
-                            <li>Anxiety</li>
-                            <li>Rehabilitation (Stroke, Parkinson’s, Aphasia etc..)</li>
-                            <li>Neonatal intensive Care</li>
-                            <li>Pain Management</li>
-                            <li>Depression</li>
-                            <li>Speech and language impairments</li> <!-- italicize list and space it out -->
-                        </ul>
-                    </div>
-                    <div class="vertbox">
-                        <h2>Benefits</h2>
-                        <ul class="notes">
-                        <li>Increases Communication- Music encourages meaningful social interaction within a group or with the therapist.</li>
-                        <li>Pain management- music can ease pain. It affects our hormones (increase dopamine and oxytocin), which can create a distraction, resulting in relaxation and lowering anxiety levels.</li>
-                        <li>Music Therapy is a therapeutic profession which focuses on well-defined objective and attainable goals for each individual. Music Therapists use their knowledge of the power music to integrate towards the some of the following goals: communication, expression, self-regulation, elevation in mood, relaxation, focus, motor, and social interaction.</li>
-                    </div>
-                </article>
+                <div class="vertbox centerbutton">
+                    <article id="sessions" class="horzbox">
+                        <div class="vertbox">
+                            <object data="images/single_Icon.svg" type="image/svg+xml" width="150" height="150"></object>
+                            <h3>Individual</h3>
+                            <p>Offering the safe environment of one-to-one </p>
+                        </div>
+                        <div class="vertbox">
+                            <object data="images/group_Icon.svg" type="image/svg+xml" width="150" height="150"></object>
+                            <h3>Group</h3>
+                            <p>up to 8 persons</p>
+                        </div>
+                        <div class="vertbox">
+                            <object data="images/virtual_Icon.svg" type="image/svg+xml" width="150" height="150"></object>
+                            <h3>Virtual</h3>
+                            <p>Connecting those who are far or prefer virtual interaction. Individual or group sessions can be accommodated through zoom (or google workspace)</p>
+                        </div>
+                        <div class="vertbox">
+                            <object data="images/contracts_Icon.svg" type="image/svg+xml" width="150" height="150"></object>
+                            <h3>Contracts</h3>
+                            <p>Schools, hospice, long-term care, senior residence, hospitals.</p>
+                        </div>
+                    </article>
+                    <button type="button" class="bookNow">Book Consultation</button>
+                    <!-- split the following into 3 columns, image/who can benefit/benefits -->
+                    <article class="horzbox">
+                        <img src="images/VerticalBanner_v2.jpg" alt="Music notes flowing up a path" style="max-width:500px; max-height:1040px;" class="pagepic">
+                        <div class="vertbox benefits">
+                            <h2>Who can benefit?</h2>
+                            <p>Music Therapy can be provided in either a group or individual setting.  Musical training or experience is NOT required in order to engage in sessions. Music therapy is accessible to individual of all ages, abilities and diverse needs, including but not limited to:</p>
+                            <ul class="notes">
+                                <li>Children, Youth, and Adults on the Autism spectrum</li>
+                                <li>Intellectual developmental disabilities and physical disabilities</li>
+                                <li>Older adults living with dementia or Alzheimer’s</li>
+                                <li>Children with attention and learning challenges</li>
+                                <li>Veterans</li>
+                                <li>Anxiety</li>
+                                <li>Rehabilitation (Stroke, Parkinson’s, Aphasia etc..)</li>
+                                <li>Neonatal intensive Care</li>
+                                <li>Pain Management</li>
+                                <li>Depression</li>
+                                <li>Speech and language impairments</li> <!-- italicize list and space it out -->
+                            </ul>
+                        </div>
+                        <div class="vertbox">
+                            <h2>Benefits</h2>
+                                <h3>Increases Communication</h3>
+                                <p>Music encourages meaningful social interaction within a group or with the therapist.</p>
+                                <h3>Pain management</h3>
+                                <p>Music can ease pain. It affects our hormones (increase dopamine and oxytocin), which can create a distraction, resulting in relaxation and lowering anxiety levels.</p>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
             </section>
-            <section class="lav2white">
-                <!--transition section from white to lavender-->
+            <section class="shade2white">
+                <!--transition section from white to colour-->
             </section>
             <section id="Contact" class="horzbox">
                 <article class="vertbox centerme">
