@@ -54,6 +54,9 @@ nav {
     width: 100%;
 }
 nav a {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
     padding: 10px 15px;
     border-radius: 30px;
     border: 2px solid var(--purple);
@@ -159,7 +162,7 @@ section { /* Some padding around all main items */
     width: 33vw;
     height: auto;
 }
-#space {
+#space { /* Sets spacing for the Types of Sessions elements */
     justify-content: space-evenly;
     margin-bottom: 4vw;
 }
@@ -168,6 +171,11 @@ section { /* Some padding around all main items */
 }
 #space > div {
     margin: 0 1vw;
+    align-items: center;
+}
+.centerme > * { /* Centers the contact info items, and spaces them nicely */
+    justify-content: space-around;
+    text-align: center;
 }
 
 

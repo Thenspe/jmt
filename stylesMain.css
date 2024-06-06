@@ -1,10 +1,5 @@
-/*
-Created: May 1 2023 by Stephen VanDam
-Last modified: May 6 2023 by SV
-
-Color Palette:
-pinkish #E6BFB3 turquoise #06BAB5 Blue #2081A7 Lavender #E6E6FA
-Purple #5A3270 Onyx #454545 white #ffffff
+/* Created May 1 2023 by SV
+Last Modified June 6 2024 by SV
 */
 /* Global Variables (colours) */
 :root {
@@ -16,10 +11,7 @@ Purple #5A3270 Onyx #454545 white #ffffff
     --purple: #5A3270;
     --footerBackground: #E6BFB3;
 }
-/*
-Initial coding for screen sizes > 900px wide
-*/
-* {
+* { /* Sets fonts and default margins */
     font-family: 'Futura Std', 'Didact Gothic', sans-serif;
     color: var(--onyx);
     box-sizing: border-box;
@@ -29,69 +21,63 @@ Initial coding for screen sizes > 900px wide
 html {
     height: 100%;
 }
+body {
+    height: 100%;
+    background-color: var(--white);
+}
+/* Classes for horizontal and vertical flows */
+.horzbox { /* sets 3-column layout on large screens*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 .vertbox { /* fixed flexbox layout for all screens */
     display: flex;/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
     flex-direction:column;
-}
-.horzbox { /* sets column flexbox layout, to be changed with screen size*/
-    display: flex;
-    flex-direction: column;
-    flex: 1 0 auto;
 }
 .permhorz { /* sets row flexbox layout, no change with screen size */
     display: flex;
     flex-direction: row;
 }
 
+/* Header and nav items */
 header {
     flex-flow: row nowrap;
-    flex: 1 0 auto;
-    color: var(--black);
-    /*justify-content: center;*/
+    align-items: center;
     margin: 1vw;
     margin-bottom: 0;
-    /*background-color: #2081A7; */
 }
 nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
     width: 100%;
-    overflow: hidden; /* as per https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
 }
 nav a {
-    padding-left: 10px;
-    padding-right: 10px;
-    font-family: 'ITC Century Std (Bold)','Kaisei Opti', serif;
-    font-size: 20pt;
+    font-size: 20px;
     text-decoration: none;
-    color: var(--black);
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 30px;
+    border: 2px solid var(--purple);
 }
-.topnav a:not(:last-child) {
-    display: none;
+nav a:hover {
+    transition: 0.5s;
+    background-color: var(--lavender);
 }
-.topnav a.icon {
-    float: right;
-    display: block;
+.topnav .icon {
+    display:none;
 }
-.topnav.responsive {
-    position: relative;
+.logo {
+    height: 6vw;
+    padding: .5vw;
 }
-.topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-.topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-}
+
+/* Footer specific items */
 main {
     flex: 1 1 auto;
     position: relative; /* need this to position inner content as per */
     overflow-y: auto; /* https://codepen.io/anthonyLukes/pen/qBjLdv */
-}
-section {
-    padding: 3vw;
-    flex-direction: column;
 }
 footer {
     width: 100%;
@@ -102,6 +88,8 @@ footer p {
     font-size: 10pt;
     text-align:center;
 }
+
+/* General Text Styles */
 h1 {
     font-family: 'ITC Century Std (Bold)','Kaisei Opti', serif;
     color: var(--black);
@@ -121,28 +109,15 @@ h3 {
 p, li {
     font-size: 15pt;
     margin: 5pt;
-    text-align: justify;
-}
-ul {
-    list-style: none;
+    text-align: left;
 }
 ul.notes {
     list-style: '\266B  '; /*UTF-8 Eighth note symbol \266A*/
     list-style-position: inside; /* https://www.w3schools.com/css/css_list.asp */
     margin-left: 15pt;
 }
-/* ol {
-    list-style-position: inside;
-    /* margin-left: 15pt;     
-} */
-.headImage {
-    /*background-color: #E6E6FA;*/
-    border-radius: 15px;
-    padding: 2vw;
-}
-.logo {
-    height: 8vw;
-}
+
+/* Background Colours and Gradient Settings */
 .lav {
     background-color: var(--lavender);
 }
@@ -154,164 +129,139 @@ ul.notes {
     min-height: 75px;
     background-image: linear-gradient(var(--white), var(--lavender))
 }
-.bio > article {
-    order:2;
-}
-.bio > img {
-    order:1;
-    margin:  0 3vw 0 0 ; /* add additional*/
-}
-.centerme {
-    justify-content: space-around;
-}
-.centertext {
-    text-align: center;
-}
-.blackFont p {
-    color: var(--black);
-}
-p.whiteFont {
-    color: var(--white);
-}
-.NoMob { /* hides desktop-only elements */
+
+/* Styles to hide mobile-device elements */
+.YesMob { /* Hides mobile-only elements */
     display:none;
 }
-/* Settings for greater than 900px wide */
-@media screen and (min-width: 900px) {
-    .horzbox { /* sets 3-column layout on large screens*/
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    /* main {
-        padding: 25px;
-    } */
-    p, li {
-        text-align:left;
-    }
-    header {
-        flex-flow: row nowrap;
-        flex: 1 0 auto;
-        align-items: center;
-        margin: 1vw;
-        margin-bottom: 0;
-    }
-    nav {
-        display: flex;
-        overflow: none;
-        flex-flow: row nowrap;
-        justify-content: space-around;
-    }
-    nav a {
-        padding: 10px 15px;
-        border-radius: 30px;
-        border: 2px solid var(--purple);
-        /* border: 2px solid #E6E6FA; */
-        /* background-color: #E6E6FA; */
-    }
-    nav a:hover {
-        transition: 0.5s;
-        background-color: var(--lavender);
-        /* border-color: var(--lavender); */
-    }
+.NoMob { /* shows desktop-only elements */
+    display:initial;
+}
+
+/* Styles for Specific Items */
+section { /* Some padding around all main items */
+    padding: 3vw;
+}
+#About >div { /* Sets a space between the primary About info and the Mission,Vision, and Values section */
+    margin-right: 5vw;
+}
+.bio { /* bio entries to have the picture beside them, so row layout is required */
+    flex-direction: row;
+    align-items: flex-start;
+}
+.bio > article { /* Allows to change up the order between Desktop and Mobile */
+    order:2;
+}
+.bio > img { /* Image and space settings for the bio pic */
+    order:1;
+    max-height: 500px;
+    margin:  0 3vw 0 0 ;
+}
+.pagepic { /* Settings for the vertical banner images */
+    margin: 0 1vw 0 1vw;
+    width: 33vw;
+    height: auto;
+}
+#space { /* Sets spacing for the Types of Sessions elements */
+    justify-content: space-evenly;
+    margin-bottom: 4vw;
+}
+#space > * {
+    flex: 1 1 0;
+}
+#space > div {
+    margin: 0 1vw;
+    align-items: center;
+}
+.centerme > * { /* Centers the contact info items, and spaces them nicely */
+    justify-content: space-around;
+    text-align: center;
+}
+
+
+/* The following insanity is to allow the flip boxes in Services to work.
+Details at https://www.w3schools.com/howto/howto_css_flip_image.asp
+*/
+.flip-box {
+    width: 400px;
+    min-height: 400px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    border-radius: 60px;
+    border: 8px solid var(--white);
+    background-color: var(--turquoise);
+}
+
+/* Style the front side */
+.flip-box-front {
+    color: var(--white);
+}
+
+/* Style the back side */
+.flip-box-back {
+    transform: rotateY(180deg);
+    padding: 40px;
+}
+
+/* trial font colours for flip boxes */
+.blackFont {
+    color: var(--onyx);
+}
+.whiteFont {
+    color: var(--white);
+}
+.lightFont {
+    color: var(--lavender);
+}
+
+
+/* For small screens */
+@media screen and (max-width: 900px) {
     .topnav a:not(:last-child) {
-        display: initial;
+        display: none;
     }
-    nav a.icon {
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .NoMob { /* hides desktop-only elements */
         display:none;
     }
-    #About {
-        display: flex;
-        flex-direction: row;
-    }
-    #About >div {
-        margin-right: 5vw;
-    }    
-    #mprocess > li {
-        flex: 1 1 0;
-        align-items: flex-start;
-    }
-    /* #MVV > div {
-        flex-grow: 1;
-        flex-basis: 0;
-        margin: 1vw;
-    } */
-    .bio { /* bio entries to have the picture beside them, so row layout is required */
-        flex-direction: row;
-        align-items: flex-start;
-    }
-    .bio > article {
-        order:2;
-    }
-    .bio > img {
-        order:1;
-        max-height: 500px;
-    }
-    .pagepic {
-        margin: 0 1vw 0 1vw;
-        width: 33vw;
-        height: auto;
-    }
-    .YesMob { /* Hides mobile-only elements */
-        display:none;
-    }
-    .NoMob { /* shows desktop-only elements */
-        display:initial;
-    }
-    .centreText {   /* https://www.w3schools.com/howto/howto_css_image_text.asp */
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    /* The following insanity is to allow the flip boxes in Services to work.
-    Details at https://www.w3schools.com/howto/howto_css_flip_image.asp
-    */
-    .flip-box {
-        /* background-color: #06BAB5; */
-        width: 20vw;
-        height: 200px;
-        perspective: 1000px; /* Remove this if you don't want the 3D effect */
-        /* border-radius: 30px; */
-      }
-      
-      /* This container is needed to position the front and back side */
-      .flip-box-inner {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        transition: transform 0.8s;
-        transform-style: preserve-3d;
-      }
-      
-      /* Do an horizontal flip when you move the mouse over the flip box container */
-      .flip-box:hover .flip-box-inner {
-        transform: rotateY(180deg);
-      }
-      
-      /* Position the front and back side */
-      .flip-box-front, .flip-box-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        -webkit-backface-visibility: hidden; /* Safari */
-        backface-visibility: hidden;
-        border-radius: 60px;
-        background-color: var(--turquoise);
-      }
-      
-      /* Style the front side (fallback if image is missing) */
-      .flip-box-front {
-        color: var(--black);
-      }
-      
-      /* Style the back side */
-      .flip-box-back {
-        color: var(--white);
-        transform: rotateY(180deg);
-      }
-      .flip-box-back >p {
-        text-align: center;
-      }
 }
