@@ -268,7 +268,11 @@ Details at https://www.w3schools.com/howto/howto_css_flip_image.asp
 
 
 /* For small screens */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
+    .horzbox { /* Change all layouts to vertical */
+        flex-direction: column;
+    }
+    /* Navigation */
     .topnav a:not(:last-child) {
         display: none;
     }
@@ -289,5 +293,11 @@ Details at https://www.w3schools.com/howto/howto_css_flip_image.asp
     }
     .NoMob { /* hides desktop-only elements */
         display:none;
+    }
+    .YesMob { /* Shows mobile-only elements */
+        display:initial;
+    }
+    .bookNow { /* Changes the button height for condensed viewing */
+        height: 120px;
     }
 }

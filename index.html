@@ -14,7 +14,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Kaisei+Opti:wght@700&display=swap" rel="stylesheet">
     </head>
     <body class="vertbox">
-        <header class="horzbox" id="myhead">
+        <header class="permhorz" id="myhead">
             <figure>
                 <img src="images/JMTWordMark.png" alt="Journey Music Therapy" class="logo">
             </figure>
@@ -36,8 +36,7 @@
                     <h1>About Journey Music Therapy</h1>
                     <p>Nicole opened her private practice, Journey Music Therapy, in 2022 with the purpose of using music as a bridge to give people autonomy and support in their daily life.  “Life brings experiences and therefore all individuals are on their own unique journey(s). It is my joy to serve and use music to support the strengths and goals of those journeys”. </p>
                 </div>
-                    <!-- <img src="images/JMT_Logo_woText.png" alt="Journey Music Therapy" style="width:40vw"> -->
-                <article class="vertbox"> <!--Mission, Vision and Values given an ID so they can be set horizontally in the CSS for large windows-->
+                <article class="vertbox">
                     <div>
                         <h2>Mission</h2>
                         <p>Our mission is to connect and support people’s journey through music in the community through a holistic therapeutic approach</p>
@@ -81,7 +80,7 @@
                         <p>Music Therapy is a scientifically proven and allied health profession.  Musical elements and interventions such as rhythm and melody are skillfully and purposefully used by a Certified Music Therapist to address social, emotional, cognitive and, physical health. A holistic approach is used to build a therapeutic relationship enhancing the well-being and needs of the individual and to facilitate desired outcomes such as learning, self-expression, and personal growth.
                         </p>
                     </article>
-                    <img src="images/Vertical Banner.jpg" alt="Music notes flowing down a river" style="max-width:502px; max-height:1003px;" class="pagepic">
+                    <img src="images/Vertical Banner.jpg" alt="Music notes flowing down a river" style="max-width:502px; max-height:1003px;" class="pagepic NoMob">
                     <article class="vertbox">
                         <h2>What Makes a Music Therapist</h2>
                         <p>In order to practice music therapy, one needs to become a Certified Music Therapist (Credentials: MTA).  This entails a four-year university bachelor degree, completing a 1,000- hour supervised clinical internship and passing a recognized certified exam which tests the knowledge of musical skills, therapy approaches, practices and techniques. Upon passing the exam the application and certification is signed through the Canadian Association of Music Therapists (CAMT).  Continuing education and following the Code of Ethics is mandatory to stay in good standing as an MTA.</p>
@@ -89,26 +88,36 @@
                 </div>
                 <h2>Music Therapy Process</h2>
                 <p>Music Therapy sessions are designed on individualized long-term and short-term wellness goals. </p>
-                <article class="vertbox">
+                <article id="notflippy" class="vertbox YesMob">
+                    <h3 id="pro1">Intake</h3>
+                    <p id="pro2">An intake helps the therapist learn about the client before the first therapy session takes place. It also helps the therapist to develop interventions that are best for the client.</p>
+                    <h3 id="pro3">Assessment</h3>
+                    <p id="pro4">An initial assessment can take 2-4 sessions. In these sessions the music therapist will learn more about the client to establish a baseline.</p>
+                    <h3 id="pro5">Treatment Plan</h3>
+                    <p id="pro6">An initial assessment can take 2-4 sessions. In these sessions the music therapist will learn more about the client to establish a baseline.</p>
+                    <h3 id="pro7">Review</h3>
+                    <p id="pro8">An initial assessment can take 2-4 sessions. In these sessions the music therapist will learn more about the client to establish a baseline.</p>
+                </article>
+                <article id="flippy" class="vertbox NoMob">
                     <!-- The following craziness is to allow for a flipped image to show text, as per https://www.w3schools.com/howto/howto_css_flip_image.asp -->
                     <div class="horzbox"> <!-- row 1-->
                         <div class="flip-box"> <!--First Box "Referral"-->
                             <div class="flip-box-inner">
                                 <div class="flip-box-front">
-                                    <h2>Referral or intake form</h2>
+                                    <h3 id="proA"></h3>
                                 </div>
                                 <div class="flip-box-back">
-                                <p>An intake helps the therapist learn about the client before the first therapy session takes place. It also helps the therapist to develop interventions that are best for the client.</p>
+                                <p id="proB"></p>
                                 </div>
                             </div>
                         </div>
                         <div class="flip-box"> <!-- Second Box "Assessment"-->
                             <div class="flip-box-inner">
                                 <div class="flip-box-front">
-                                    <h2 class="blackFont">Assessment</h2>
+                                    <h3 id="proC" class="blackFont"></h3>
                                 </div>
                                 <div class="flip-box-back">
-                                    <p>An initial assessment can take 2-4 sessions. In these sessions the music therapist will learn more about the client to establish a baseline.</p>
+                                    <p id="proD"></p>
                                 </div>
                             </div>
                         </div>
@@ -117,20 +126,20 @@
                         <div class="flip-box"> <!--Third Box "Treatment"-->
                             <div class="flip-box-inner">
                                 <div class="flip-box-front whiteFont">
-                                    <h2 class="whiteFont">Treatment Plan</h2>
+                                    <h3  id="proE"class="whiteFont"></h3>
                                 </div>
                                 <div class="flip-box-back">
-                                <p>If available, the music therapist will collaborate with support team (POA, guardians, parents, staff, other disciplines) to individualize the objectives and goals for the client. During treatment musical interventions such as singing, songwriting, improvisation, listening, lyrical analysis, breath work etc.., may be used to address goals.</p>
+                                <p id="proF">If available, the music therapist will collaborate with support team (POA, guardians, parents, staff, other disciplines) to individualize the objectives and goals for the client. During treatment musical interventions such as singing, songwriting, improvisation, listening, lyrical analysis, breath work etc.., may be used to address goals.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="flip-box"> <!-- Fourth Box "Review"-->
                             <div class="flip-box-inner">
                                 <div class="flip-box-front">
-                                    <h2 class="lightFont">Review</h2>
+                                    <h3  id="proG"class="lightFont"></h3>
                                 </div>
                                 <div class="flip-box-back">                            
-                                    <p>After a recommended period, the music therapist will review and reassess to determine if goals and objectives need to be modified or have been achieved. Once goals have been achieved a recommendation of being discharged will be discussed.</p>
+                                    <p id="proH">After a recommended period, the music therapist will review and reassess to determine if goals and objectives need to be modified or have been achieved. Once goals have been achieved a recommendation of being discharged will be discussed.</p>
                                 </div>
                             </div>
                         </div>
@@ -170,7 +179,7 @@
                     <button type="button" class="bookNow">Book Consultation</button>
                     <!-- split the following into 3 columns, image/who can benefit/benefits -->
                     <article class="horzbox">
-                        <img src="images/VerticalBanner_v2.jpg" alt="Music notes flowing up a path" style="max-width:500px; max-height:1040px;" class="pagepic">
+                        <img src="images/VerticalBanner_v2.jpg" alt="Music notes flowing up a path" style="max-width:500px; max-height:1040px;" class="pagepic NoMob">
                         <div class="vertbox benefits">
                             <h2>Who can benefit?</h2>
                             <p>Music Therapy can be provided in either a group or individual setting.  Musical training or experience is NOT required in order to engage in sessions. Music therapy is accessible to individual of all ages, abilities and diverse needs, including but not limited to:</p>
