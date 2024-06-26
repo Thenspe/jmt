@@ -9,9 +9,9 @@ function navFunction() {
 }
 console.log("Does this work?");
 
-const para = document.createElement("h3");
-para.innerHTML = "There is other content going here.";
-document.getElementById("notflippy").appendChild(para);
+// const para = document.createElement("h3");
+// para.innerHTML = "There is other content going here.";
+// document.getElementById("notflippy").appendChild(para);
 
 const nodes = ["pro1","pro2","pro3","pro4","pro5","pro6","pro7","pro8"];
 const clones = ["proA","proB","proC","proD","proE","proF","proG","proH"];

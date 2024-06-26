@@ -211,7 +211,7 @@ section { /* Some padding around all main items */
 Details at https://www.w3schools.com/howto/howto_css_flip_image.asp
 */
 .flip-box {
-    width: 40vw;
+    width: 25vw;
     min-height: 400px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
     /* Remove the next three lines if you don't want a static background */
