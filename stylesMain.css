@@ -109,10 +109,14 @@ h3 {
     font-size: 15pt;
     margin: 5pt;
 }
+p {
+    
+}
 p, li {
     font-size: 15pt;
     margin: 5pt;
     text-align: left;
+    line-height: 1.5;
 }
 .notes {
     list-style: '\266B  '; /*UTF-8 Eighth note symbol \266A*/
@@ -123,9 +127,6 @@ p, li {
     list-style: '\266A  ';
     list-style-position: inside; /* https://www.w3schools.com/css/css_list.asp */
     margin-left: 0;
-}
-span {
-    font-weight: bold;
 }
 
 /* Background Colours and Gradient Settings */
@@ -209,9 +210,13 @@ section { /* Some padding around all main items */
 Details at https://www.w3schools.com/howto/howto_css_flip_image.asp
 */
 .flip-box {
-    width: 400px;
+    width: 40vw;
     min-height: 400px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    /* Remove the next three lines if you don't want a static background */
+    background-image: url("images/WatercolourSplatters_LightBlue1.png");
+    background-position: center;
+    background-size: 40vw;
 }
 
 /* This container is needed to position the front and back side */
@@ -239,10 +244,18 @@ Details at https://www.w3schools.com/howto/howto_css_flip_image.asp
     height: 100%;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
-    border-radius: 60px;
-    border: 8px solid var(--white);
-    background-color: var(--turquoise);
+    /* border-radius: 60px;
+    border: 8px solid var(--white); */
+    /* background-color: var(--turquoise); */
+    background-position: center;
+    background-size: 40vw;
 }
+/* .flip-box-front {
+    background-image: url("images/WatercolourSplatters_LightBlue1.png")
+}
+.flip-box-back {
+    background-image: url("images/WatercolourSplatters_LightBlue2.png")
+} */
 
 /* Style the front side */
 .flip-box-front {

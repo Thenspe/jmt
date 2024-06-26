@@ -19,7 +19,4 @@ for(let i in nodes) {
     const node = document.getElementById(nodes[i]);
     const clone = node.cloneNode(true);
     document.getElementById(clones[i]).appendChild(clone);
-    console.log(nodes[i]);
-    console.log(clones[i]);
-    console.log(clone);
 }
