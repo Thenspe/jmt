@@ -152,6 +152,12 @@ p, li {
 }
 
 /* Styles for Specific Items */
+.right {    /* for right-aligned text */
+    text-align: right;
+}
+.center {
+    text-align: center;
+}
 section { /* Some padding around all main items */
     padding: 3vw;
 }
