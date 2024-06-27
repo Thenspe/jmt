@@ -214,10 +214,6 @@ Details at https://www.w3schools.com/howto/howto_css_flip_image.asp
     width: 25vw;
     min-height: 400px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
-    /* Remove the next three lines if you don't want a static background */
-    background-image: url("images/WatercolourSplatters_LightBlue1.png");
-    background-position: center;
-    background-size: 40vw;
 }
 
 /* This container is needed to position the front and back side */
@@ -251,12 +247,12 @@ Details at https://www.w3schools.com/howto/howto_css_flip_image.asp
     background-position: center;
     background-size: 40vw;
 }
-/* .flip-box-front {
+.flip-box-front {
     background-image: url("images/WatercolourSplatters_LightBlue1.png")
 }
 .flip-box-back {
     background-image: url("images/WatercolourSplatters_LightBlue2.png")
-} */
+}
 
 /* Style the front side */
 .flip-box-front {
