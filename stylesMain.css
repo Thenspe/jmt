@@ -1,5 +1,5 @@
 /* Created May 1 2023 by SV
-Last Modified June 6 2024 by SV
+Last Modified June 28 2024 by SV
 */
 /* Global Variables (colours) */
 :root {
@@ -243,6 +243,9 @@ Details at https://www.w3schools.com/howto/howto_css_flip_image.asp
 .flip-box:hover .flip-box-inner {
     transform: rotateY(180deg);
 }
+.flip-box:hover .flip-box-front {
+    color: var(--lavender);
+}
 
 /* Position the front and back side */
 .flip-box-front, .flip-box-back {
@@ -270,7 +273,7 @@ Details at https://www.w3schools.com/howto/howto_css_flip_image.asp
 
 /* Style the front side */
 .flip-box-front {
-    color: var(--white);
+    /* color: var(--white); */
 }
 
 /* Style the back side */
