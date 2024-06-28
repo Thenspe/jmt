@@ -1,6 +1,3 @@
-<!-- Stephen's local convenience: file:///D:/Nicole/index.html -->
-<!-- Mark's local convenience: file:///C:/Users/Mark/Documents/NicoleWebsite/GitHubRepo/jmt/index.html -->
- <!-- Edits by line ::: 80  106 122 186 -->
 <!DOCTYPE html>
 <html>
     <head>
@@ -78,7 +75,7 @@
                 <!--transition section from white to colour-->
             </section>
             <section id="WIMT" class="vertbox">
-                <div class="horzbox"> <!-- fix the widths here -->
+                <div class="horzbox equalcolumn">
                     <article class="vertbox">
                         <h1>What is Music Therapy?</h1>
                         <p>Music therapy is a scientifically proven and allied health profession.  Musical elements and interventions such as rhythm and melody are skillfully and purposefully used by a Certified Music Therapist to
@@ -88,7 +85,7 @@
                     <article class="vertbox">
                         <h2>What Makes a Music Therapist</h2>
                         <p>In order to practice music therapy, one needs to become a Certified Music Therapist (Credentials: MTA).  This entails</p>
-                        <ul>
+                        <ul class="notes">
                             <li>a four-year university bachelor degree</li>
                             <li>completing a 1,000- hour supervised clinical internship</li>
                             <li>passing a recognized certified exam which tests the knowledge of musical skills, therapy approaches, practices and techniques.</li>
@@ -102,40 +99,46 @@
                         <div class="vertbox benefits">
                         <h2>Who Can Benefit?</h2>
                         <p>Music therapy can be provided in either a group or individual setting. Musical training and/or experience is NOT required in order to engage in sessions. Music therapy is accessible to individual of all ages, abilities and diverse needs, including but not limited to:</p>
-                        <ul class="notes">
-                            <!-- split list into two columns -->
-                            <li>Autism spectrum disorder</li>
-                            <li>Intellectual developmental disabilities and physical disabilities</li>
-                            <li>Alzheimer’s and Dementia</li>
-                            <li>Veterans</li>
-                            <li>Rehabilitation (Stroke, Neurodegenerative Diseases, Aphasia, etc.)</li>
-                            <li>Neonatal Intensive Care</li>
-                            <li>Mental Illness</li>
-                            <li>Palliative/Hospice</li>
-                            <li>Hospital Units</li>
-                        </ul>
+                        <div class="horzbox equalcolumn">
+                            <ul class="eightnotes">
+                                <li>Autism spectrum disorder</li>
+                                <li>Intellectual developmental disabilities and physical disabilities</li>
+                                <li>Alzheimer’s and Dementia</li>
+                                <li>Veterans</li>
+                                <li>Rehabilitation (Stroke, Neurodegenerative Diseases, Aphasia, etc.)</li>
+                            </ul>
+                            <ul class="eightnotes">
+                                <li>Neonatal Intensive Care</li>
+                                <li>Mental Illness</li>
+                                <li>Palliative/Hospice</li>
+                                <li>Hospital Units</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="vertbox benefits">
                         <h2>What are the Benefits?</h2>
                         <p>Music therapy can be an effective aid for (not limited to):</p>
-                        <ul class="notes">
-                            <!-- split list into two columns -->
-                            <li>Anxiety and/or Stress</li>
-                            <li>Pain Management</li>
-                            <li>Reminiscence</li>
-                            <li>Meditation/Imagery</li>
-                            <li>Speech and Language</li>
-                            <li>Achievement of OT & PT goals</li>
-                            <li>Sensory/ Cognitive Stimulation</li>
-                            <li>Increase Learning and Attention</li>
-                            <li>Reality Orientation</li>
-                            <li>Decrease Agitation and/or Restlessness </li>
-                            <li>Decrease Repetitive Behaviours </li>
-                        </ul>
+                        <div class="horzbox equalcolumn">
+                            <ul class="notes">
+                                <li>Anxiety and/or Stress</li>
+                                <li>Pain Management</li>
+                                <li>Reminiscence</li>
+                                <li>Meditation/Imagery</li>
+                                <li>Speech and Language</li>
+                                <li>Achievement of OT & PT goals</li>
+                            </ul>
+                            <ul class="notes">
+                                <li>Sensory/ Cognitive Stimulation</li>
+                                <li>Increase Learning and Attention</li>
+                                <li>Reality Orientation</li>
+                                <li>Decrease Agitation and/or Restlessness </li>
+                                <li>Decrease Repetitive Behaviours </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 </article>
-                <article class="vertbox"> <!-- Make this something you can link to-->
+                <article id="HowMusic" class="vertbox">
                     <h2>How is Music Therapy Used?</h2>
                     <p>Interventions are purposefully and skillfully planned for each session such as (not limited to):</p>
                     <p><b>Music Listening</b> which builds attention and memory skills, auditory perception and sensory orientation and stimulation.</p>
@@ -149,7 +152,7 @@
             </section>
             <section id="Services" class="shade vertbox">
                 <h1>Services</h1>
-                <h2>We Offer Sessions:</h2>
+                <h2>We offer the following types of sessions:</h2>
                 <div class="vertbox centerbutton">
                     <article id="sessions" class="horzbox">
                         <div class="vertbox">
@@ -169,7 +172,7 @@
                         </div>
                         <div class="vertbox">
                             <object data="images/contracts_Icon.svg" type="image/svg+xml" width="150" height="150"></object>
-                            <h3>Contracts</h3>
+                            <h3>Partnerships</h3>
                             <p>Schools, hospice, long-term care, senior residence, hospitals, day programs, non-profit and workplace programs.</p>
                         </div>
                     </article>
@@ -183,11 +186,11 @@
                     <h3 id="pro3">Assessment</h3>
                     <p id="pro4">An initial assessment can take 2-4 sessions. In these sessions the music therapist will learn more about the client to establish a baseline.</p>
                     <h3 id="pro5">Treatment Plan</h3>
-                <!-- Make the bold text link to "How is Music Therapy Used" --><p id="pro6">If available the music therapist will collaborate with the support team (POA, guardians, parents, staff, other disciplines) to individualize the objectives and goals for the client. During treatment musical interventions such as <b>singing, improvisation, listening</b> etc.., may be used to address goals.</p>
+                    <p id="pro6">If available the music therapist will collaborate with the support team (POA, guardians, parents, staff, other disciplines) to individualize the objectives and goals for the client. During treatment musical interventions such as <a href="#HowMusic">singing, improvisation, listening</a> etc.., may be used to address goals.</p>
                     <h3 id="pro7">Review</h3>
                     <p id="pro8">After a recommended period a reassessment and session modification will be made. Once goals have been achieved, a recommendation of being discharged will be discussed.</p>
                 </article>
-                <article id="flippy" class="vertbox NoMob">
+                <article id="flippy" class="vertbox NoMob"> <!-- figure out the transparency thing -->
                     <!-- The following craziness is to allow for a flipped image to show text, as per https://www.w3schools.com/howto/howto_css_flip_image.asp -->
                     <div class="horzbox"> <!-- row 1-->
                         <div class="flip-box"> <!--First Box "Referral"-->

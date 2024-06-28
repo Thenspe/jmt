@@ -33,6 +33,9 @@ body {
     flex-direction: row;
     justify-content: space-around;
 }
+.equalcolumn > * {
+    flex: 1 1 0;
+}
 .vertbox { /* fixed flexbox layout for all screens */
     display: flex;/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
     flex-direction:column;
@@ -121,6 +124,11 @@ p, li {
 }
 .notes {
     list-style: '\266B  '; /*UTF-8 Eighth note symbol \266A*/
+    list-style-position: inside; /* https://www.w3schools.com/css/css_list.asp */
+    margin-left: 15pt;
+}
+.eightnotes {
+    list-style: '\266A  '; /*UTF-8 Eighth note symbol \266A*/
     list-style-position: inside; /* https://www.w3schools.com/css/css_list.asp */
     margin-left: 15pt;
 }
@@ -251,7 +259,7 @@ Details at https://www.w3schools.com/howto/howto_css_flip_image.asp
     border: 8px solid var(--white); */
     /* background-color: var(--turquoise); */
     background-position: center;
-    background-size: 40vw;
+    background-size: 50vw;
 }
 .flip-box-front {
     background-image: url("images/WatercolourSplatters_LightBlue1.png")
