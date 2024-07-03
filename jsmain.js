@@ -8,7 +8,7 @@ function navFunction() {
     }
 }
 
-//sticky header code
+//sticky header code as per https://www.w3schools.com/howto/howto_js_sticky_header.asp
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
 
