@@ -90,6 +90,9 @@ footer {
     width: 100%;
     background-color: var(--footerBackground);
     flex: 0 0 auto;
+    position: fixed;
+    left: 0;
+    bottom: 0;
 }
 footer p {
     font-size: 10pt;
@@ -188,7 +191,7 @@ section { /* Some padding around all main items */
     margin-right: 5vw;
 }
 .narrow {
-    padding: 0 15   vw;
+    padding: 0 15vw;
 }
 .bio { /* bio entries to have the picture beside them, so row layout is required */
     flex-direction: row;
