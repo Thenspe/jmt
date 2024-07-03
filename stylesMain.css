@@ -81,10 +81,10 @@ nav a:hover {
 }
 
 /* Sticky menu/footer specific items */
-main {
-    flex: 1 1 auto;
-    position: relative; /* need this to position inner content as per */
-    overflow-y: auto; /* https://codepen.io/anthonyLukes/pen/qBjLdv */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
 }
 footer {
     width: 100%;

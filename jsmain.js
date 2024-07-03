@@ -7,12 +7,27 @@ function navFunction() {
         x.className = "topnav";
     }
 }
-console.log("Does this work?");
 
-// const para = document.createElement("h3");
-// para.innerHTML = "There is other content going here.";
-// document.getElementById("notflippy").appendChild(para);
+//sticky header code
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
 
+// Get the header
+var header = document.getElementById("myhead");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+// writes text into the flippy boxes as needed
 const nodes = ["pro1","pro2","pro3","pro4","pro5","pro6","pro7","pro8"];
 const clones = ["proA","proB","proC","proD","proE","proF","proG","proH"];
 for(let i in nodes) {
