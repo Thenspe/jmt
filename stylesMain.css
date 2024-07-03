@@ -137,6 +137,12 @@ p, li {
     list-style-position: inside; /* https://www.w3schools.com/css/css_list.asp */
     margin-left: 0;
 }
+hr {
+    margin: 1.5vw 15vw;
+}
+figcaption {    /* centers text beneath the bio images */
+    text-align: center;
+}
 
 /* Background Colours and Gradient Settings */
 .shade {
@@ -151,7 +157,7 @@ p, li {
     background-image: linear-gradient(var(--mainSecondary), var(--mainPrimary))
 }
 
-/* Styles to hide mobile-device elements */
+/* Styles to show/hide mobile-device elements */
 .YesMob { /* Hides mobile-only elements */
     display:none;
 }
@@ -318,5 +324,8 @@ Details at https://www.w3schools.com/howto/howto_css_flip_image.asp
     }
     .bookNow { /* Changes the button height for condensed viewing */
         height: 120px;
+    }
+    hr {
+        margin: 8vw 15vw;
     }
 }
