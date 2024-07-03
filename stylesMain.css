@@ -191,9 +191,9 @@ section { /* Some padding around all main items */
 #About >div { /* Sets a space between the primary About info and the Mission,Vision, and Values section */
     margin-right: 5vw;
 }
-/* #WIMT {
+#WIMT {
     align-items: center;
-} */
+}
 .narrow {
     padding: 0 15vw;
 }
@@ -289,15 +289,15 @@ Details at https://www.w3schools.com/howto/howto_css_flip_image.asp
     border: 8px solid var(--white); */
     /* background-color: var(--turquoise); */
     background-position: center;
-    background-size: 50vw;
+    /* background-size: 50vw; */
 }
 .flip-box-front {
     background-image: url("images/WatercolourSplatters_LightBlue1.png");
-    /* background-size: contain; */
+    background-size: cover;
 }
 .flip-box-back {
     background-image: url("images/WatercolourSplatters_LightBlue2.png");
-    /* background-size: contain; */
+    background-size: cover;
 }
 
 /* Style the front side */
