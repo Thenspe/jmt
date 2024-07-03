@@ -1,5 +1,4 @@
 <!-- All of the images lose aspect ratio with resizing. Fix it. -->
- <!-- space out mission/values/vision and make it pretty -->
 <!DOCTYPE html>
 <html>
     <head>
@@ -14,19 +13,20 @@
         <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Kaisei+Opti:wght@700&display=swap" rel="stylesheet">
     </head>
     <body class="vertbox">
-        <figure>
+        <figure id="Home">
             <img src="images/TopHeader_V2.png" alt="Journey Music Therapy: Serving Peterborough and Surrounding Communities." class="banner">
         </figure>
         <header class="permhorz" id="myhead">
-            <figure>
+            <figure class="NoMob">
                 <img src="images/JMTWordMark.png" alt="Journey Music Therapy" class="logo">
             </figure>
             <nav class="topnav" id="myTopnav">
+                <a href="#Home" class="YesMob">Home</a>
                 <a href="#About">About JMT</a>
                 <a href="#WIMT">What is Music Therapy</a>
                 <a href="#Services">Services</a>
                 <a href="#Contact">Contact Us</a>
-                <a href="javascript:void(0);" class="icon" onclick="navFunction()">&#9776;</a>
+                <a href="javascript:void(0);" class="icon YesMob" onclick="navFunction()">&#9776;</a>
             </nav>
         </header>
         <main class="vertbox"> <!--container class sets flexbox layout-->
@@ -54,7 +54,7 @@
                         <p class="center">We envision music therapy as a bridge for one&#x2019s journey and bring knowledge to all the communities.</p>
                     </div>
                 </article> 
-                <img src="images/QuoteHeader3.png" alt="“Through the elements of music, a catalyst is created to help with transcendence, self- esteem, joy, comfort, and positive change for oneself.  I believe that music is the foundation for unity and relationships. It is the tool to engage and find purpose in one’s life.">
+                <!-- <img src="images/QuoteHeader3.png" alt="“Through the elements of music, a catalyst is created to help with transcendence, self- esteem, joy, comfort, and positive change for oneself.  I believe that music is the foundation for unity and relationships. It is the tool to engage and find purpose in one’s life."> -->
             </section>
             <section class="white2shade">
                 <!--transition section from lavender to white-->

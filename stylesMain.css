@@ -163,13 +163,13 @@ p, li {
 }
 
 /* Styles for Specific Items */
+img {
+    object-fit: cover;
+}
 .banner {
     padding: 0;
-    height: 600px;
-    overflow-x: hidden;
-}
-hr {
-    margin: 1.5vw 15vw;
+    height: 500px;
+    object-fit: cover;
 }
 figure {
     display: flex;
@@ -190,6 +190,12 @@ section { /* Some padding around all main items */
 }
 #About >div { /* Sets a space between the primary About info and the Mission,Vision, and Values section */
     margin-right: 5vw;
+}
+#About >article>* {
+    margin: 0 5vw;
+}
+#about>hr {
+    margin: 1.5vw 15vw;
 }
 #WIMT {
     align-items: center;
@@ -255,6 +261,7 @@ Details at https://www.w3schools.com/howto/howto_css_flip_image.asp
     width: 25vw;
     min-height: 400px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    text-align: center;
 }
 
 /* This container is needed to position the front and back side */
@@ -317,13 +324,26 @@ Details at https://www.w3schools.com/howto/howto_css_flip_image.asp
     .horzbox { /* Change all layouts to vertical */
         flex-direction: column;
     }
-    /* Navigation */
-    .topnav a:not(:last-child) {
-        display: none;
+    nav {
+        flex-direction: column;
+        justify-content: flex-end;
     }
-    .topnav a.icon {
-        float: right;
+    a {
+        display: flex;
+        align-items: center;
+    }
+    /* Navigation */
+    .topnav {
+        overflow: hidden;
+    }
+    .topnav a{
         display: block;
+        float: left;
+    }
+    .topnav a:not(:last-child) {display: none;}
+    .topnav a.icon {
+    float: right;
+    display: block;
     }
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
@@ -334,8 +354,9 @@ Details at https://www.w3schools.com/howto/howto_css_flip_image.asp
     .topnav.responsive a {
         float: none;
         display: block;
-        text-align: left;
+        text-align: center;
     }
+    .topnav.responsive a:not(:last-child) {text-align: right;}
     .NoMob { /* hides desktop-only elements */
         display:none;
     }
