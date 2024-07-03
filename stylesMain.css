@@ -183,7 +183,7 @@ section { /* Some padding around all main items */
 #About >div { /* Sets a space between the primary About info and the Mission,Vision, and Values section */
     margin-right: 5vw;
 }
-#Team {
+.narrow {
     padding: 0 20vw;
 }
 .bio { /* bio entries to have the picture beside them, so row layout is required */
