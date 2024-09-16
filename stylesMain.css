@@ -116,9 +116,6 @@ h3 {
     font-size: 15pt;
     margin: 5pt;
 }
-p {
-    
-}
 p, li {
     font-size: 15pt;
     margin: 5pt;
@@ -300,23 +297,23 @@ Details at https://www.w3schools.com/howto/howto_css_flip_image.asp
     /* background-size: 50vw; */
 }
 .option1 {
-    background-image: url("images/WS_LB_BLUEBOR.png");
+    background-image: url("images/WatercolourSplatters_LightBlue2.png");
     background-size: cover;
 }
 .option2 {
-    background-image: url("images/WS_LB_GOLBOR.png");
+    background-image: url("images/WatercolourSplatters_LightBlue2.png");
     background-size: cover;
 }
 .option3 {
-    background-image: url("images/CR_LB_BLUEBOR\ \(1\).png");
+    background-image: url("images/WatercolourSplatters_LightBlue2.png");
     background-size: cover;
 }
 .option4 {
-    background-image: url("images/CoffeeRing.png");
+    background-image: url("images/WatercolourSplatters_LightBlue2.png");
     background-size: cover;
 }
 .flip-box-back {
-    background-image: url("images/WatercolourSplatters_LightBlue2.png");
+    background-image: url("images/CoffeeRing.png");
     background-size: cover;
 }
 
