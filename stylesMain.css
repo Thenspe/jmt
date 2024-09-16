@@ -192,7 +192,7 @@ section { /* Some padding around all main items */
     margin-right: 5vw;
 }
 #About >article>* {
-    margin: 0 5vw;
+    margin: 0 3vw;
 }
 #about>hr {
     margin: 1.5vw 15vw;
@@ -244,6 +244,7 @@ section { /* Some padding around all main items */
     margin: 4vw;
     background-color: var(--footerBackground);
     border-radius: 10px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);    
 }
 .benefits { /* Adds some space between the benefits sections */
     margin: 0 2vw;
@@ -298,8 +299,20 @@ Details at https://www.w3schools.com/howto/howto_css_flip_image.asp
     background-position: center;
     /* background-size: 50vw; */
 }
-.flip-box-front {
-    background-image: url("images/WatercolourSplatters_LightBlue1.png");
+.option1 {
+    background-image: url("images/WS_LB_BLUEBOR.png");
+    background-size: cover;
+}
+.option2 {
+    background-image: url("images/WS_LB_GOLBOR.png");
+    background-size: cover;
+}
+.option3 {
+    background-image: url("images/CR_LB_BLUEBOR\ \(1\).png");
+    background-size: cover;
+}
+.option4 {
+    background-image: url("images/CoffeeRing.png");
     background-size: cover;
 }
 .flip-box-back {
