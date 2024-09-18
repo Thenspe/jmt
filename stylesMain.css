@@ -182,6 +182,7 @@ img {
 }
 .textOverImage {
     text-align: center;
+    font-size: 18pt;
     font-style: italic;
     font-weight: bold;
     line-height: 1;
