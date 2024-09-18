@@ -272,7 +272,7 @@ section { /* Some padding around all main items */
 Details at https://www.w3schools.com/howto/howto_css_flip_image.asp
 */
 .flip-box {
-    width: 50vw;
+    width: 25vw;
     min-height: 400px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
     text-align: center;
@@ -313,24 +313,29 @@ Details at https://www.w3schools.com/howto/howto_css_flip_image.asp
     /* background-size: 50vw; */
 }
 .option1 {
-    background-image: url("images/WatercolourSplatters_LightBlue2.png");
-    background-size: cover;
+    background-image: url("images/WatercolourSplatters_LightBlue2_small.png");
+    background-size:contain;
+    background-repeat: no-repeat;
 }
 .option2 {
-    background-image: url("images/WatercolourSplatters_LightBlue2.png");
-    background-size: cover;
+    background-image: url("images/WatercolourSplatters_LightBlue2_small.png");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .option3 {
-    background-image: url("images/WatercolourSplatters_LightBlue2.png");
-    background-size: cover;
+    background-image: url("images/WatercolourSplatters_LightBlue2_small.png");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .option4 {
-    background-image: url("images/WatercolourSplatters_LightBlue2.png");
-    background-size: cover;
+    background-image: url("images/WatercolourSplatters_LightBlue2_small.png");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .flip-box-back {
-    background-image: url("images/WatercolourSplatters_LightBlue2.png");
-    background-size: cover;
+    background-image: url("images/CoffeeRing.png");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 /* Style the front side */
