@@ -168,7 +168,7 @@ p, li {
 img {
     object-fit: cover;
 }
-.imageBox {
+.imageBox {     /* background for the quote*/
     position: relative;
     text-align: center;
     color: white;
@@ -284,7 +284,6 @@ Details at https://www.w3schools.com/howto/howto_css_flip_image.asp
     width: 25vw;
     min-height: 400px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
-    text-align: center;
 }
 
 /* This container is needed to position the front and back side */
@@ -321,7 +320,7 @@ Details at https://www.w3schools.com/howto/howto_css_flip_image.asp
     background-position: center;
     /* background-size: 50vw; */
 }
-.option1 {
+/* .option1 {
     background-image: url("images/WatercolourSplatters_LightBlue2_small.png");
     background-size:contain;
     background-repeat: no-repeat;
@@ -340,22 +339,22 @@ Details at https://www.w3schools.com/howto/howto_css_flip_image.asp
     background-image: url("images/WatercolourSplatters_LightBlue2_small.png");
     background-size: contain;
     background-repeat: no-repeat;
-}
-.flip-box-back {
-    background-image: url("images/CoffeeRing.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-}
+} */
 
 /* Style the front side */
 .flip-box-front {
-    /* color: var(--white); */
+    background-image: url("images/WatercolourSplatters_LightBlue2_small.png");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 /* Style the back side */
 .flip-box-back {
     transform: rotateY(180deg);
     padding: 40px;
+    background-image: url("images/CoffeeRing.png");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 
